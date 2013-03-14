@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true">
+	<import resource="classpath:spring/applicationContext-ejb.xml" />
+	<import resource="classpath:spring/applicationContext-persistence.xml" />
+	<import resource="classpath:spring/applicationContext-hibernate.xml" />
+	<import resource="classpath:spring/applicationContext-dao.xml" />
+	<import resource="classpath:spring/applicationContext-service.xml" />
+	
+	<!-- 
+	<import resource="classpath:spring/applicationContext-admin-ejb.xml"/>
+	<import resource="classpath:spring/applicationContext-admin-service.xml"/>
+	 -->
+		<!-- 
+	<import resource="classpath:spring/applicationContext-quartz.xml" />
+     -->
+	
+	<bean id="transactionInterceptor"
+		class="org.springframework.transaction.interceptor.TransactionInterceptor">
+		<property name="transactionManager" ref="transactionManager"></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>				
+			</props>
+		</property>
+	</bean>
+	
+	<bean
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="beanNames">
+			<value>*Service, *Manage,hotelManageWeb, *FaxManager, hraManager, workStatesManager</value>
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>transactionInterceptor</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

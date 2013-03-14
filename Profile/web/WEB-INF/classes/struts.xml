@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC    
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"    
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" 	extends="struts-default">
+		<!-- 全局跳转结果 -->
+		<global-results>
+			<result name="forwardToError">/common/error.jsp</result>
+			<!--<result name="forwardByURL" type="dispatcherByURL" />
+			--><!--<result name="forwardByURL" >${param_forwardPage}</result>  -->
+
+			<!--<result name="forwardByXml" type="dispatcherByXml" />
+				
+			-->
+			<!-- <result name="forwardToHome">/main/main.jsp</result> -->
+
+			<result name="daoException" type="chain">
+				exceptionHandle
+			</result>
+
+			<result name="rootException" type="chain">
+				exceptionHandle
+			</result>
+
+		</global-results>
+
+		<!-- 全局异常类 -->
+		<global-exception-mappings>
+			<exception-mapping
+				exception="com.job528.util.exception.DAOException"
+				result="daoException" />
+
+			<exception-mapping
+				exception="com.job528.util.exception.ConfigException"
+				result="configException" />
+
+			<exception-mapping
+				exception="com.job528.util.exception.InvalidDataException"
+				result="invalidDataException" />
+
+
+			<exception-mapping exception="java.lang.Exception"
+				result="rootException" />
+
+			<exception-mapping exception="java.lang.RuntimeException"
+				result="rootException" />
+				
+		</global-exception-mappings>
+
+
+		<!-- 异常处理 -->
+		<action name="exceptionHandle"
+			class="com.job528.util.webwork.ExceptionHandleAction" />
+
+			
+	</package>
+    <include file="struts-home.xml" />
+	<include file="struts-profile.xml" />
+	<include file="struts-friend.xml" />
+	<include file="struts-job.xml" />
+	<include file="struts-message.xml" />
+	<include file="struts-setting.xml" />
+	<include file="struts-weiboToken.xml" />
+	<include file="struts-user.xml" />
+	<include file="struts-admin-label.xml" />
+</struts>

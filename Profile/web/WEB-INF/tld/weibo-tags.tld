@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.0</jsp-version>
+	<short-name>w</short-name>
+	<uri>/weibo-tags</uri>
+	<display-name>"Weibo Tags"</display-name>
+	<tag>
+		<name>text</name>
+		<tag-class>com.job528.taglib.TextTag</tag-class>
+		<body-content>JSP</body-content>
+		<description><![CDATA[Out put format text]]></description>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Out put format text.For example: filter smile ,filter url etc.]]></description>
+		</attribute>
+		<attribute>
+			<name>mark</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Whether filter the single quotation marks.]]></description>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>image</name>
+		<tag-class>com.job528.taglib.ImageTag</tag-class>
+		<body-content>JSP</body-content>
+		<description><![CDATA[Out put head image path]]></description>
+		<attribute>
+			<name>value</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description><![CDATA[Out put head image path.For example: /images/people.gif or http://img.528.cn/ttt.gif]]></description>
+		</attribute>
+	</tag>
+</taglib>

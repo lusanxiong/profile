@@ -1,0 +1,343 @@
+.invite_box{ width:948px; background-color:#fff; }
+.inviteoperate{ width:652px; float:left; margin: 20px 0 0 8px; display: inline;}
+.inviteoperate .block{padding:5px;}
+.inviteoperate .block .cell {}
+.inviteoperate .block .tips{ color:#999; margin-top:5px}
+.inviteoperate .block .tips img{margin-right:5px}
+.inviteoperate .block .tips span{ color:#ba2636; margin-top:5px}
+.inviteoperate .block .emaill{ margin-bottom:10px;}
+.inviteoperate .block .emaill .yx{ white-space:nowrap; line-height:24px;}
+.inviteoperate .block .emaill .bloack{ width:174px; height:24px; line-height:24px; border:1px solid #999;}
+.inviteoperate .block .emaill .fh{ padding:0 5px; line-height:24px; color:#999}
+.inviteoperate .block .pre{ width:543px; padding:3px 0; clear:both}
+.inviteoperate .block .pre .txt{float:left; padding-left:5px; padding-right:5px}
+.inviteoperate .block .pre span{background: url(../images/invite_03.png) no-repeat scroll 0 -65px transparent; cursor:pointer}
+
+.inviteoperate .block .pro{ border:1px solid #ebebeb; background-color:#f5f7f8; width:543px; height:240px; display:block; margin-top:10px;}
+.inviteoperate .block .pro .tle{ width:300px; line-height:24px; margin-left:145px; clear:both; margin-top:5px;}
+.inviteoperate .block .pro .tle .blod{width:200px; height:22px;line-height:22px; border:1px solid #999999; margin-left:5px; margin-top:4px;}
+
+.inviteoperate .block .pro .con{ width:494px; line-height:21px; float:left; margin:10px 0 0 25px; display:inline}
+.inviteoperate .block .pro .con u{ color:#ba2636; text-decoration:none}
+
+.inviteoperate .method .loading {
+    background: url(../images/loading.gif) no-repeat scroll 0 3px transparent;
+    text-indent: 20px;
+}
+
+.recommend-box .invite-ts{ width:762px; height:50px; border:1px solid #dcdcdc; margin-top:10px;}
+
+.inviteoperate .invite-title {
+	width:658px;
+	margin-bottom:23px;
+}
+.inviteoperate .note{ color:#999}
+
+.inviteoperate .invite-history {
+    background: url(../images/invite_03.png) no-repeat scroll 0 -3px transparent;
+    color: #1E50A2;
+    float: right;
+    text-decoration: underline;
+    text-indent: 20px;
+}
+.inviteoperate .add-friend {
+    background: url(../images/invite_03.png) no-repeat scroll 0 -29px transparent;
+}
+.inviteoperate .method {
+    background: url(../images/invite_03.png) no-repeat scroll 0 0 transparent;
+    border-bottom: 1px dashed #DCDDDD;
+    margin-top: 12px;
+	float:left;
+	width:603px;
+	clear:both;
+    padding: 5px 0 17px 55px;
+	_padding: 5px 0 20px 55px;
+}
+.inviteoperate .method1 {
+    background-position: 0 -326px;
+}
+.inviteoperate .method2 {
+    background-position: 0 -456px;
+}
+.inviteoperate .method3 {
+    background-position: 0 -699px;
+}
+.inviteoperate .method4 {
+    background-position: 0 -909px;
+}
+
+.inviteoperate .title {
+    background: url(../images/invite_03.png) no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 25px;
+	margin-top:8px;
+	_margin-top:13px;
+    width: 20px;
+}
+.inviteoperate .title1 {
+    background-position: 0 -94px;
+    height: 25px;
+    padding-left: 121px;
+}
+.inviteoperate .title2 {
+    background-position: 0 -143px;
+    height: 25px;
+    padding-left: 121px;
+}
+.inviteoperate .title3 {
+    background-position: 0 -247px;
+    height: 25px;
+    padding-left: 121px;
+}
+.inviteoperate .title4 {
+    background-position: 0 -295px;
+    height: 25px;
+    padding-left: 121px;
+}
+
+.inviteoperate .inviteInput {
+    float: left;
+    width: 370px;
+	height:24px;
+	line-height:24px;
+	border:1px solid #999;
+}
+.inviteoperate .operate {
+    display: block;
+    float: left;
+	margin-left:410px;
+	display:inline;
+    width:71px;
+	height:23px;
+}
+.invitelist .up .operate, .inviteoperate .up .operate {
+    background: url(../images/find_friends.gif) no-repeat transparent;
+}
+.invitelist .down .operate, .inviteoperate .down .operate {
+    background: url(../images/find_friends.gif) no-repeat transparent;
+}
+.inviteoperate .cehckcode {
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    margin-top: -3px;
+    width: 100px;
+}
+.inviteoperate .btn {
+    background: url(../images/invite_list.png) no-repeat scroll left -500px transparent;
+    color: #2B2B2B;
+    font-size: 12px;
+    font-weight: 400;
+	height:28px;
+	margin-left:10px;
+    margin-top: -2px;
+    width: 98px;
+}
+.inviteoperate .btn-hover, .inviteoperate .btn:hover, .inviteoperate .btn-hover {
+    background: url(../images/invite_list.png) no-repeat scroll left -528px transparent;
+    color: #2B2B2B;
+}
+.inviteoperate .btn-false, .inviteoperate .btn-false:hover {
+    background: url(../images/invite_list.png) no-repeat scroll left -556px transparent !important;
+    color: #999999;
+    font-weight: 400;
+    width: 98px;
+}
+
+
+/*--------------------��ҳ S--------------------*/
+.invitelist {padding:20px 0 20px 50px;}
+.invSetting {
+    color: #2B2B2B;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+	margin-left:30px;
+}
+.invitelist .bd {adding: 0 30px; font-weight:bold;}
+.invitelist .banner {
+    border-bottom: 1px dashed #DCDCDC;
+    height: 60px;
+}
+.invitelist .operateBanner {
+    background: url(../images/invite_list.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    padding-left: 60px;
+	display:inline;
+}
+.invitelist .current1 .num1 {
+    background-position: left top;
+}
+.invitelist .current1 .num2 {
+    background-position: left -282px;
+}
+.invitelist .current2 .num1 {
+    background-position: left -62px;
+}
+.invitelist .current2 .num2 {
+    background-position: left -346px;
+}
+.invitelist .title {
+    background: url(../images/invite_list.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 40px;
+    width: 70px;
+}
+.invitelist .current1 .title1 {
+    background-position: left -122px;
+	margin-top:30px;
+}
+.invitelist .current1 .title2 {
+    background-position: left -444px;
+}
+.invitelist .current2 .title1 {
+    background-position: left -174px;
+}
+.invitelist .current2 .title2 {
+    background-position: left -404px;
+}
+.invite-box {
+    padding:0px 20px ;
+}
+.invite-box .select-all {
+    padding: 10px 10px 5px; font-weight:normal
+}
+
+
+.invite-box .select-tips {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+.invite-box .email-box{ width:780px; height:336px; _height:330px; border:1px solid #dcdcdc; margin-top:11px;overflow-x:hidden;overflow-y:auto;}
+.invite-box .email-box ul{ width:780px;}
+.invite-box .email-box li{ width:780px; height:41px; border-bottom:1px dashed #dcdcdc;}
+.invite-box .email-box .fxk{float:left; margin-left:20px; margin-top:15px; _margin-top:10px; display:inline;vertical-align: -2px;_vertical-align: -1px;}
+.invite-box .email-box .name{ width:200px; float:left; margin-top:13px; margin-left:11px; display:inline}
+.invite-box .email-box .email{ width:400px; float:left; margin-top:13px; }
+
+.invite-box .attention{font-weight:700; color:#ffffff;  width:181px; height:28px; line-height:28px; margin-top:10px; text-align:center; background:url(../images/w_100702.png) 0 -289px;border: medium none;display: inline-block;font-size: 14px; cursor:pointer}
+.invite-box .attention:hover{ font-weight:700; color:#ffffff; background-position: 0 -317px; text-decoration: none; cursor:pointer}
+
+
+
+/*--------------------��ҳ S--------------------*/
+.invitelist {padding:20px 0 20px 50px;}
+.invSetting {
+    color: #2B2B2B;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+	margin-left:30px;
+}
+.invitelist .bd {adding: 0 30px; font-weight:bold;}
+.invitelist .banner {
+    border-bottom: 1px dashed #DCDCDC;
+    height: 60px;
+}
+.invitelist .operateBanner {
+    background: url(../images/invite_list.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    padding-left: 60px;
+	display:inline;
+}
+.invitelist .current1 .num1 {
+    background-position: left top;
+}
+.invitelist .current1 .num2 {
+    background-position: left -282px;
+}
+.invitelist .current2 .num1 {
+    background-position: left -62px;
+}
+.invitelist .current2 .num2 {
+    background-position: left -346px;
+}
+.invitelist .title {
+    background: url(../images/invite_list.png) no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 40px;
+    width: 70px;
+}
+.invitelist .current1 .title1 {
+    background-position: left -122px;
+	margin-top:30px;
+}
+.invitelist .current1 .title2 {
+    background-position: left -444px;
+}
+.invitelist .current2 .title1 {
+    background-position: left -174px;
+}
+.invitelist .current2 .title2 {
+    background-position: left -404px;
+}
+.invite-box {
+    padding:0px 20px ;
+}
+.invite-box .select-all {
+    padding: 10px 10px 5px; font-weight:normal
+}
+
+
+.invite-box .select-tips {
+    color: #999999;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+.invite-box .email-box{ width:780px; height:336px; _height:330px; border:1px solid #dcdcdc; margin-top:11px;overflow-x:hidden;overflow-y:auto;}
+.invite-box .email-box ul{ width:780px;}
+.invite-box .email-box li{ width:780px; height:41px; border-bottom:1px dashed #dcdcdc;}
+.invite-box .email-box .fxk{float:left; margin-left:20px; margin-top:15px; _margin-top:10px; display:inline;vertical-align: -2px;_vertical-align: -1px;}
+.invite-box .email-box .name{ width:200px; float:left; margin-top:13px; margin-left:11px; display:inline}
+.invite-box .email-box .email{ width:400px; float:left; margin-top:13px; }
+
+.invite-box .attention{font-weight:700; color:#ffffff;  width:181px; height:28px; line-height:28px; margin-top:10px; text-align:center; background:url(../images/w_100702.png) 0 -289px;border: medium none;display: inline-block;font-size: 14px; cursor:pointer}
+.invite-box .attention:hover{ font-weight:700; color:#ffffff; background-position: 0 -317px; text-decoration: none; cursor:pointer}
+
+/*--------------------��ҳ E--------------------*/
+
+.hot_people{width:234px; height:243px; float:right}
+.hot_people_top{width:234px; height:33px; float:left; background-image:url(../images/hot_people.gif); margin-top:20px;}
+.hot_people_top .word{ white-space:nowrap; font-size:14px; font-weight:bold; color:#ff8400; float:left; margin:8px 0 0 60px; display:inline}
+.hot_people_top .button{width:50px; height:17px; float:left; margin-top:6px}
+.hot_people_top .button .img1{ float:left; margin-left:9px; display:inline; cursor:pointer}
+.hot_people_top .button .img2{ float:right; cursor:pointer}
+
+.hot_people_cer{ width:234px; float:left; background-image:url(../images/hot_people_cer.gif);}
+.hot_people_cer .left{ width:68px; height:68px; border:1px solid #e1e1e1; padding:3px; float:left; margin:9px 0 0 33px; display:inline}
+.hot_people_cer .right{ width:76px; float:left; margin-left:15px; margin-top:11px; display:inline;}
+
+.hot_people_cer .right .name{ width:76px; float:left; font-size:14px; font-weight:bold; color:#0179e7; margin-top:5px}
+.hot_people_cer .right .icon{ width:14px; height:17px; float:left; margin:6px 0 9px 0}
+.hot_people_cer .right .button{ width:71px; height:17px; float:left; cursor:pointer}
+
+.hot_people_con{ height:66px; float:left; margin:17px 0 0 33px; display:inline;}
+.hot_people_con .address{ width:155px;float:left; margin-bottom:9px; color:#676767}
+.hot_people_con .school{ width:155px;float:left; margin-bottom:3px; color:#0179e7}
+.hot_people_con .dsiscipline{ width:155px;float:left; margin-bottom:5px; color:#0179e7}
+
+.hot_people_dw{ width:212px; height:49px; float:left; background-image:url(../images/hot_people_dw.gif); margin:4px 0 14px 12px; display:inline}
+
+.hot_people_dws{ width:234px; height:6px; float:left; background-image:url(../images/hot_people_dws.gif); overflow:hidden}
+
+.hot_people_dw .block{ width:68px; float:left; text-align:center; margin-top:10px}
+.hot_people_dw .yw{ width:68px; color:#0179e7; font-weight:bold}
+.hot_people_dw .zw{ width:68px; color:#676767; _margin-top:4px; cursor:pointer}
+.hot_people_dw .line{ width:1px; height:30px;float:left;background-color:#cccdcd; margin-top:10px}
+
+
+
+

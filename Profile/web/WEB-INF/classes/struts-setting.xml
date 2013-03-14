@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="setting" namespace="/setting" extends="struts-default">
+		<global-results>
+			<result name="login" type="redirect">/login.jsp</result>
+		</global-results>
+	   <action name="mySetting" class="com.job528.profile.action.SettingOldAction">
+			<result name="success">/setting/mySetting.jsp</result>
+		</action>
+		
+		<action name="weiboSync" class="com.job528.profile.action.WeiboSyncAction">
+			<result name="success">/setting/weibo_sync.jsp</result>
+		</action>
+		
+		<action name="label" class="com.job528.profile.action.LabelAction">
+			<result name="success" >/setting/label.jsp</result>
+		</action>
+		
+		<action name="addLabel" class="com.job528.profile.action.LabelAction" method="add">
+			<result name="success" >/common/label_xml.jsp</result>
+		</action>
+		
+		 <action name="delLabel" class="com.job528.profile.action.LabelAction" method="del">
+			<result name="success" >/common/label_iterator.jsp</result>
+		</action>
+		
+		<action name="nextLabel" class="com.job528.profile.action.LabelAction" method="next">
+			<result name="success" >/common/label_hot_iterator.jsp</result>
+		</action>
+	</package>
+	
+</struts>

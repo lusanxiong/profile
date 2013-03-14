@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="profile" namespace="/profile" extends="struts-default">
+		<global-results>
+			<result name="login" type="redirect">/login.jsp</result>
+		</global-results>
+	    <action name="user" class="com.job528.profile.action.ProfileAction">
+			<result name="success">/profile/user.jsp</result>
+		</action>
+		<action name="baseInfo" class="com.job528.profile.action.BaseInfoOldAction">
+			<result name="success">/profile/baseInfo.jsp</result>
+		</action>
+		
+		<action name="education" class="com.job528.profile.action.EducationOldAction">
+			<result name="success">/profile/education.jsp</result>
+		</action>
+		
+		<action name="training" class="com.job528.profile.action.TrainingOldAction">
+			<result name="success">/profile/training.jsp</result>
+		</action>
+		
+		<action name="language" class="com.job528.profile.action.LanguageOldAction">
+			<result name="success">/profile/language.jsp</result>
+		</action>
+		
+		<action name="experience" class="com.job528.profile.action.ExperienceOldAction">
+			<result name="success">/profile/experience.jsp</result>
+		</action>
+		
+		<action name="intentions" class="com.job528.profile.action.IntentionsAction">
+			<result name="success">/profile/intentions.jsp</result>
+		</action>
+		
+		<action name="additional" class="com.job528.profile.action.AdditionalOldAction">
+			<result name="success">/profile/additional.jsp</result>
+		</action>
+		<action name="photo" class="com.job528.profile.action.PhotoOldAction">
+			<result name="success">/profile/photo.jsp</result>
+		</action>
+		
+		<action name="upload" class="com.job528.profile.action.UploadHeadAction">
+			<result name="input" type="redirect-action">
+				<param name="actionName">photoShow.shtml</param>
+			</result>
+			<result name="cut">/profile/cut.jsp</result>
+		</action>
+		
+		<action name="cut" class="com.job528.profile.action.CutHeadAction" >
+			<result name="success" type="redirect-action">
+				<param name="actionName">photo.shtml</param>
+			</result>
+		</action>
+		
+		<action name="index" class="com.job528.profile.action.MyResumeAction">
+			<result name="success">/profile/home.jsp</result>
+		</action>
+		<!-- new config -->
+		<!-- baseInfo begin -->
+		<action name="baseInfoShow" class="com.job528.profile.action.BaseInfoAction">
+			<result name="success">/profile/baseInfo_show.jsp</result>
+		</action>
+		
+		<action name="baseInfoEdit" class="com.job528.profile.action.BaseInfoAction" method="edit">
+			<result name="success">/profile/baseInfo_edit.jsp</result>
+		</action>
+		
+		<action name="baseInfoUpdate" class="com.job528.profile.action.BaseInfoAction" method="update">
+			<result name="success">/profile/baseInfo_show.jsp</result>
+		</action>
+		<!-- baseInfo end -->
+		<!-- education begin -->
+		<action name="educationShow" class="com.job528.profile.action.EducationAction">
+			<result name="success">/profile/education_show.jsp</result>
+		</action>
+		
+		<action name="educationAdd" class="com.job528.profile.action.EducationAction" method="add">
+			<result name="success">/profile/education_edit.jsp</result>
+		</action>
+		
+		<action name="educationEdit" class="com.job528.profile.action.EducationAction" method="edit">
+			<result name="success">/profile/education_edit.jsp</result>
+		</action>
+		
+		<action name="educationDel" class="com.job528.profile.action.EducationAction" method="del">
+			<result name="success">/profile/education_show.jsp</result>
+		</action>
+		
+		<action name="educationMerge" class="com.job528.profile.action.EducationAction" method="merge">
+			<result name="success">/profile/education_show.jsp</result>
+		</action>
+		<!-- education end -->
+		<!-- training begin -->
+		<action name="trainingShow" class="com.job528.profile.action.TrainingAction">
+			<result name="success">/profile/training_show.jsp</result>
+		</action>
+		
+		<action name="trainingEdit" class="com.job528.profile.action.TrainingAction" method="edit">
+			<result name="success">/profile/training_edit.jsp</result>
+		</action>
+		
+		<action name="trainingAdd" class="com.job528.profile.action.TrainingAction" method="add">
+			<result name="success">/profile/training_edit.jsp</result>
+		</action>
+		
+		<action name="trainingDel" class="com.job528.profile.action.TrainingAction" method="del">
+			<result name="success">/profile/training_show.jsp</result>
+		</action>
+		
+		<action name="trainingMerge" class="com.job528.profile.action.TrainingAction" method="merge">
+			<result name="success">/profile/training_show.jsp</result>
+		</action>
+		<!-- training end -->
+		<!-- language begin -->
+		<action name="languageShow" class="com.job528.profile.action.LanguageAction">
+			<result name="success">/profile/language_show.jsp</result>
+		</action>
+		
+		<action name="languageAll" class="com.job528.profile.action.LanguageAction" method="all">
+			<result name="success">/profile/language_container.jsp</result>
+		</action>
+		
+		<action name="languageEdit" class="com.job528.profile.action.LanguageAction" method="edit">
+			<result name="success">/profile/language_edit.jsp</result>
+		</action>
+		
+		<action name="languageAdd" class="com.job528.profile.action.LanguageAction" method="add">
+			<result name="success">/profile/language_edit.jsp</result>
+		</action>
+		
+		<action name="languageMerge" class="com.job528.profile.action.LanguageAction" method="merge">
+			<result name="success">/profile/language_show.jsp</result>
+		</action>
+		
+		<action name="languageDel" class="com.job528.profile.action.LanguageAction" method="del">
+			<result name="success">/profile/language_container.jsp</result>
+		</action>
+		
+		<action name="languageBack" class="com.job528.profile.action.LanguageAction" method="back">
+			<result name="success">/profile/language_show.jsp</result>
+		</action>
+		
+		<action name="languageToeflShow" class="com.job528.profile.action.LanguageAction" method="toeflShow">
+			<result name="success">/profile/language_toefl_show.jsp</result>
+		</action>
+		
+		<action name="languageToeflEdit" class="com.job528.profile.action.LanguageAction" method="toeflEdit">
+			<result name="success">/profile/language_toefl_edit.jsp</result>
+		</action>
+
+		<action name="languageToeflUpdate" class="com.job528.profile.action.LanguageAction" method="toeflUpdate">
+			<result name="success">/profile/language_toefl_show.jsp</result>
+		</action>		
+		<!-- language end -->
+		<!-- intentions begin -->
+		<action name="intentionShow" class="com.job528.profile.action.IntentionAction">
+			<result name="success">/profile/intention_show.jsp</result>
+		</action>
+		
+		<action name="intentionEdit" class="com.job528.profile.action.IntentionAction" method="edit">
+			<result name="success">/profile/intention_edit.jsp</result>
+		</action>
+		
+		<action name="intentionUpdate" class="com.job528.profile.action.IntentionAction" method="update">
+			<result name="success">/profile/intention_show.jsp</result>
+		</action>
+		<!-- intentions end -->
+		<!-- additional begin -->
+		<action name="additionalShow" class="com.job528.profile.action.AdditionalAction">
+			<result name="success">/profile/additional_show.jsp</result>
+		</action>
+
+		<action name="additionalEdit" class="com.job528.profile.action.AdditionalAction" method="edit">
+			<result name="success">/profile/additional_edit.jsp</result>
+		</action>
+		
+		<action name="additionalUpdate" class="com.job528.profile.action.AdditionalAction" method="update">
+			<result name="success">/profile/additional_show.jsp</result>
+		</action>
+		<!-- additional end -->
+		<!-- it skill begin -->
+		<action name="itSkillShow" class="com.job528.profile.action.ITSkillAction">
+			<result name="success">/profile/itSkill_show.jsp</result>
+		</action>
+
+		<action name="itSkillEdit" class="com.job528.profile.action.ITSkillAction" method="edit">
+			<result name="success">/profile/itSkill_edit.jsp</result>
+		</action>
+		
+		<action name="itSkillUpdate" class="com.job528.profile.action.ITSkillAction" method="update">
+			<result name="success">/profile/itSkill_show.jsp</result>
+		</action>
+		<!-- it skill end -->
+		<!-- experience begin -->
+		<action name="experienceShow" class="com.job528.profile.action.ExperienceAction">
+			<result name="success">/profile/experience_show.jsp</result>
+		</action>
+		<action name="experienceAll" class="com.job528.profile.action.ExperienceAction" method="all">
+			<result name="success">experience_container.jsp</result>
+		</action>
+		<action name="experienceAdd" class="com.job528.profile.action.ExperienceAction" method="add">
+			<result name="success">/profile/experience_edit.jsp</result>
+		</action>
+		<action name="experienceEdit" class="com.job528.profile.action.ExperienceAction" method="edit">
+			<result name="success">/profile/experience_edit.jsp</result>
+		</action>
+		<action name="experienceDel" class="com.job528.profile.action.ExperienceAction" method="del">
+		</action>
+		<action name="experienceMerge" class="com.job528.profile.action.ExperienceAction" method="merge">
+			<result name="success"></result>
+		</action>
+		<!-- experience end -->
+		<!-- work begin -->
+		<action name="workShow" class="com.job528.profile.action.WorkAction">
+			<result name="success">/profile/work_show.jsp</result>
+		</action>
+		<action name="workEdit" class="com.job528.profile.action.WorkAction" method="edit">
+			<result name="success">/profile/work_edit.jsp</result>
+		</action>
+		<action name="workUpdate" class="com.job528.profile.action.WorkAction" method="update">
+		</action>
+		<!-- work end -->
+		<!-- photo begin -->
+		<action name="photoShow" class="com.job528.profile.action.PhotoAction">
+			<result name="success">/profile/photo_show.jsp</result>
+		</action>
+		<action name="photoShield" class="com.job528.profile.action.PhotoAction" method="shield">
+		</action>
+		<action name="photoEdit" class="com.job528.profile.action.PhotoAction" method="edit">
+			<result name="success">/profile/photo_edit.jsp</result>
+		</action>
+		<!-- photo end -->
+		<!-- setting begin -->
+		<action name="settingShow" class="com.job528.profile.action.SettingAction">
+			<result name="success">/profile/setting_show.jsp</result>
+		</action>
+		<action name="settingEdit" class="com.job528.profile.action.SettingAction" method="edit">
+			<result name="success">/profile/setting_edit.jsp</result>
+		</action>
+		<action name="settingUpdate" class="com.job528.profile.action.SettingAction" method="update">
+		</action>
+		<!-- setting end -->
+		<action name="complete" class="com.job528.profile.action.CompleteAction">
+			<result name="success">/profile/complete.jsp</result>
+		</action>
+	</package>
+</struts>

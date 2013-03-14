@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+/*------内容块 S------*/
+.index_content{ width:948px; margin:10px auto 0 auto;}
+/*------内容块 E------*/
+
+/*------内容块左 S------*/
+.index_content_left{ width:720px; float:left}
+/*------内容块左 E------*/
+
+/*------发布信息 S------*/
+.share{ width:720px; height:159px; float:left; text-align:left}
+.share_left{ width:15px; height:159px; float:left}
+.share_center{ width:690px; height:159px; float:left; background-image:url(../images/share_center.gif)}
+
+.share_tle{ width:690px; height:46px; color:#999999}
+.share_tle_img{ width:246px; height:46px; float:left}
+.share_tle_txt{ width:auto; height:21px; float:right; margin:10px 10px 0 0; display:inline;text-align: right;}
+.share_tle_yw{ font-family:Arial;font-size:20px;font-weight: bold;}
+.share_tle_red{ font-family:Arial; font-size:20px;color: red;font-weight: bold;}
+
+.share_box{ width:680px; height:56px; border:2px solid #dbdbdb; font-size:14px; line-height:18px; background-color:#FFF; color:#000; padding-left:4px; overflow-y:hidden; overflow:hidden;resize:none; float:left}
+.share_dw{ width:690px; height:29px; margin-top:10px; float:left}
+.share_dw ul{ float:left; margin-left:15px; display:inline}
+.share_dw li { width:57px; height:25px; float:left;line-height:25px;}
+.share_dw li a{display:block; cursor:pointer}
+.share_dw li a:hover{ width:57px; height:25px; float:left;background: url(../images/share_dw_hr.gif) no-repeat;display:block; color:#666; text-decoration:none; cursor:pointer}
+.share_dw_icon{ float:left; padding:2px 0 0 6px;}
+.share_dw_word{ float:left; padding:2px 0 0 3px; _margin-top:1px}
+.share_right{ width:15px; height:159px; float:right}
+
+/*------发布信息 E------*/
+
+/*------最新职位 S------*/
+.job{ width:720px; margin-top:18px; text-align:left}
+.job_tle{ width:720px; height:28px; background: url(../images/newsjob_tlebg.gif) repeat-x;}
+.job_tle ul{ width:240px; height:28px; padding-left:15px; float:left}
+.job_tle li{ height:28px; line-height:28px; float:left; margin-right:3px; text-align:center}
+.job_tle li a{ width:96px; display:block; background:url(../images/friend.gif)}
+.job_tle li a:hover{ width:105px; display:block; background:url(../images/newsjob.gif); font-weight:bold}
+.job_tle li a.chover{ width:105px; display:block; background:url(../images/newsjob.gif); font-weight:bold}
+.job_icon{ margin:0 2px 0 16px; display:inline}
+.job_word{ float:right; margin:9px 20px 0 0; display:inline}
+.job_list{ width:720px; margin-top:10px}
+/*--有颜色的框架--*/
+.job_list_box{ width:720px;}
+.job_list_box ul{ width:720px; margin-top:15px;}
+.job_list_box ul li{ float:left}
+.job_list_left{ width:335px; height:63px; margin-left:15px; margin-top:5px; margin-bottom:5px; float:left; display:inline; background-color:f4f4f4}
+
+
+.job_list_right{ width:335px; height:63px; float:left; margin-left:35px; margin-top:5px; margin-bottom:5px;  display:inline; background-color:f4f4f4}
+
+
+/*.job_list_lefts{ width:348px; padding:13px 0 13px 12px; _height:63px; height:37px; float:left; display:inline;}
+.job_list_lefts ul{ width:360px;}
+.job_list_lefts li{float:left;}
+
+.job_list_rights{ width:335px;_width:360px; padding:13px 0 13px 25px; _height:63px;height:37px; float:left; display:inline;}
+.job_list_rights ul{ width:360px;}
+.job_list_rights li{float:left; }*/
+/*--标题--*/
+.job_post{ width:171px; float:left;}
+/*--地址--*/
+.job_add{ width:41px; float:left; margin-top:1px; color:#999}
+/*--日期--*/
+.job_date{ width:75px; float:left; margin-top:1px; color:#999}
+/*--申请--*/
+.njob_app{ width:26px; float:left; margin-top:1px}
+/*--公司名称--*/
+.job_company{ width:209px; float:left; margin-top:11px; }
+/*--钱--*/
+.job_wage{ width:63px; float:left; margin-top:11px; text-align:right}
+/*--推荐--*/
+.job_recom{ width:39px; float:left; _margin-left:4px; display:inline; margin-top:11px; text-align:right}
+/*--按钮--*/
+.job_button{ width:700px; float:left; margin:10px 19px 40px 0; text-align:right; display:inline}
+
+/*------最新职位 E------*/
+
+/*------内容块右 S------*/
+.index_content_right{ float:right; text-align:left}
+/*------内容块右 E------*/
+
+
+
+/*------手机职位订阅 S------*/
+.subscribe{ width:206px; height:42px; margin:10px auto;}
+/*------手机职位订阅 E------*/
+
+/*------你可能认识的朋友 S------*/
+.friend{ width:206px; margin:12px auto;}
+.friend_tle{ width:206px; height:31px;}
+.friend_dw{ width:204px; border-bottom:1px solid #d9d9d9; border-left:1px solid #d9d9d9; border-right:1px solid #d9d9d9; overflow:auto; display:block}
+.friend_dw ul{ float:left; margin:9px 0px 0px 7px; display:inline; }
+.friend_dw li{ width:50px; float:left; padding:0 7px 10px 7px; display:inline}
+.friend_dw_pic{ width:50px; height:50px}
+.friend_dw_word{ width:50px; padding-top:7px; padding-bottom:7px;text-align:center}
+.friend_dw_button{ width:48px; height:15px; padding:3px 2px 0 0; overflow:hidden; text-align:right; background-image:url(../images/add_friend.gif); color:#0c69b0}
+/*------你可能认识的朋友 E------*/
+
+/*------企业推荐 S------*/
+.enterprise{ width:206px;}
+.enterprise_tle{ width:206px; height:31px;}
+.enterprise_dw{ width:204px; padding-bottom:5px; border-bottom:1px solid #d9d9d9; border-left:1px solid #d9d9d9; border-right:1px solid #d9d9d9;}
+.enterprise_dw ul{ width:179px; float:left; margin:13px 0 0 12px; display:inline;}
+.enterprise_dw li{ width:179px; margin-bottom:8px; float:left; display:inline}
+/*------企业推荐 E------*/
+
+
+
+
+
+
+/*------转发 S------*/
+.forward{ width:452px; color: #333333; text-align:left}
+.forward_up{ width:452px; height:10px; background-image: url(../images/forward_up.png); overflow:hidden; }
+.forward_cr{ width:452px; background:url(../images/forward_cr.png) repeat-y; overflow:hidden}
+.forward_dw{ width:452px; height:10px; background-image:url(../images/forward_dw.png); overflow:hidden}
+
+.forwardcon{ width:430px; border:1px solid #888888; float:left; margin-left:10px; display:inline}
+.forward_tle{ border-bottom:1px solid #d3d3d3; background-image:url(../images/titlebarbg.jpg);width:430px;height:29px;}
+.forward_tle h1{ color:#ff9d10;float: left;font-size: 14px;font-weight: bold;line-height: 29px; float:left; margin:0 0 0 10px; display:inline}
+.forward_tle a.close{ background: url(../images/dialog_close.gif) no-repeat scroll left top transparent; cursor: pointer; float: right; height: 19px; margin: 5px; overflow: hidden; text-indent: -9999px; width: 19px;}
+.forward_tle a.close:hover { background: url(../images/dialog_closes.gif) no-repeat scroll left transparent;}
+
+.forward_con{ width:430px; background-color:#FFF; overflow:hidden}
+.forward_ilent{ min-height:30px;max-height:78px;
+  /* sets min-height & max-height for IE */
+  _height: expression(
+    this.scrollHeight < 30 ? "30px" :
+      ( this.scrollHeight > 84 ? "84px" : "auto")
+  );
+  background-color:#f3f3f3;
+  float:left;
+  margin:12px 0 0 10px;
+  display:inline;
+  line-height:18px;
+  padding-bottom:6px;
+  overflow:hidden}
+.forward_ilent .usename{ width:390px; float:left; margin:8px 10px 0 10px; display:inline; overflow:hidden}
+.forward_bx{ width:430px;float:left; margin:4px 0 0 10px; display:inline}
+.forward_bq{ width:19px; height:19px; float:left; margin-top:4px; cursor: pointer}
+.forward_txt{ width:auto; float:right; margin-right:20px; display:inline ;text-align: right; color:#b5b5b5}
+.forward_block{ width:400px; height:60px; _height:54px; padding:3px; border:1px solid #e4e4e4; float:left; margin:6px 0 0 10px ; display:inline;overflow-y:hidden; font-size:12px; line-height:18px;resize:none}
+.forward .buttons {
+    background-color: #F6F6F6;
+    border-top:1px solid #cccccc;
+	height:42px;
+	_height:43px;
+	width:430px;
+	float:left;
+	margin-top:10px;
+    clear: both;
+}
+.forward .buttons .left{ float:left; width:280px; text-align:left}
+.forward .buttons .left ul{ float:left; width:280px; height:13px;}
+.forward .buttons .left li{ float:left; width:280px; height:13px; margin:6px 0 0 10px; display:inline}
+.forward .buttons .right{ float:right;}
+
+.forward_fxk{vertical-align: text-bottom; width:13px; height:13px; float:left; margin-right:6px; _margin-right:3px;
+vertical-align: -2px;}
+
+.forward_default{ width:64px; height:26px; line-height:26px; text-align:center; background-image: url(../images/default.gif); color:#FFF; display:block; float:right; margin-right:10px; display:inline; cursor:pointer; margin-top:8px;}
+.forward_normal{ width:64px; height:26px; line-height:26px; text-align:center; background-image: url(../images/normal.gif); color:#000; display:block; float:right; margin-right:10px; display:inline; cursor:pointer; margin-top:8px;}
+/*------转发 E------*/
+
+/*------ 个人主页 发布信息人物内容 S-------*/
+.operate{ display:block; margin-top:5px}
+.pub_time{ text-align:left; float:left; color:#999;}
+.pub_time a{ color:#ccc;}
+.pub_time a:hover{ text-decoration:underline;}
+.pub_caozuo{ text-align:right; float:right; color:#ccc;}
+.pub_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pub_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pubb_caozuo{ text-align:right; float:right;color:#ccc;}
+.pubb_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pubb_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pub_caozuo a i{ font-style:normal;}
+/*------ 个人主页 发布信息人物内容 S-------*/
+

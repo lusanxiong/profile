@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+/*------职友们在干嘛发布信息 S-------*/
+.information_cons{width:534px; height:auto; overflow:hidden; text-align:center;margin:5px 6px 0 12px; padding-bottom:10px;}
+
+.information_cons dl{ width:534px; height:auto; overflow:hidden; clear:both; padding-bottom:5px; background-image:url(../images/content_line.gif); background-repeat:repeat-x; background-position:bottom; margin-top:12px; margin-bottom:8px;}
+.information_cons dl dt{ float:left;}
+.information_cons dl dd{ float:left;}
+
+.information_cons dl dd.pub_cons{ width:465px; height:auto; text-align:left; line-height:20px; color:#4e4e4e; margin-left:10px; display:inline; float:left; word-break:break-all;overflow:auto;overflow-x:hidden; font-size:14px;}
+.information_cons dl dd.pub_cons a{ color:#028bd8;}
+.information_cons dl dd.pub_cons a:hover{color:#028bd8; text-decoration:underline;}
+
+/*------更多 S-----*/
+.information_more{text-align: center; margin-top:50px auto 8px auto}
+/*------更多 E-----*/
+
+/** 图片显示 放大 S **/
+.pub_addimgs{height:auto;margin-top:5px;}
+.pub_addimgs p.pub_img{ width:auto; height:auto; max-width:130px; max-height:130px;}
+.pub_addimgs p.pub_img img{ width:auto; height:auto; max-width:124px; max-height:124px; background:#fff; border:1px solid #ccc; padding:2px;}
+.img_larges{ width:449px; height:auto; overflow:hidden; background:#f6f6f6; border:1px solid #e5e5e5; padding:7px; left:0px; top:0px; z-index:990; text-align:center;}
+.img_turns{text-align:left; font-size:12px;}
+.img_turns a{ margin-right:20px; padding-left:13px;  color:#646464;}
+.img_turns a:hover{ text-decoration:none;}
+.img_turns a.it_1{ background:url(../images/photo_ico1.gif) 0px 2px no-repeat;}
+.img_turns a.it_2{ background:url(../images/photo_ico2.gif) 0px 2px no-repeat;}
+.img_turns a.it_3{ background:url(../images/photo_ico3.gif) 0px 2px no-repeat;}
+.img_turns a.it_4{ background:url(../images/photo_ico4.gif) 0px 2px no-repeat;}
+.img_larges img{ margin-left:auto; margin-right:auto; text-align:center; margin-top:10px; width:auto; height:auto;}
+/** 图片显示 放大 E **/
+
+
+/***原文转发 S ***/
+.quotes_box{ width:515px;}
+.quotes_pic{width:16px; height:8px; overflow:hidden; float:left; margin-left:15px; display:inline; margin-top:10px}
+.quotes{ width:453px; float:left; height:auto; overflow:hidden; background:#fafafa; border:1px solid #ddd; padding:5px 5px 0px 5px; margin-bottom:5px; display:block; font-size:12px;}
+.comment_details{ width:455px;}
+.quotes ul{ width:455px; overflow:hidden;}
+.quotes_word{ width:455px;}
+li.comment_details span.quotes_word a{ color:#1470cc;}
+li.comment_details span.quotes_word a:hover{ color:#1470cc; text-decoration:underline;}
+/***原文转发 E ***/
+
+/*------------- 职友们在干嘛 评论 S------------*/
+.comments{ width:465px;}
+.comment_box{ width:465px; float:left; }
+.comment_box_up{ width:465px;float:left;}
+.comment_box_tle{ width:465px; height:9px; float:left; overflow:hidden;}
+.comment_block_close{text-align:right; margin-right:8px; float:right; display:inline;}
+.comment_block_closes{text-align:left; margin-left:8px; _margin-left:4px; float:left; display: inline;}
+.comment_block{ width:463px; border:1px solid #e6e6e6; background-color:#f3f3f3; text-align:left; overflow:hidden; display:block}
+
+.comment_con{ width:463px; height:26px;  float:left; margin:11px 0 0 13px; display: inline}
+.comment_cons{ width:435px; height:24px; font-size:12px; line-height:24px; border:1px solid #c6c6c6; background-color:#FFF;overflow:hidden; display:block;resize:none;}
+.comment_word{ width:435px; height:41px; float:left; margin:11px 0 0 13px; display: inline}
+.comment_word_l{ width:18px; height:18px; float:left; cursor:pointer}
+.comment_word_c{ width:229px; height:41px; float:left; margin-left:10px; display:inline}
+.comment_word_cs{ width:229px; height:13px; float:left; margin-bottom:7px}
+.comment_word_cs_k{ width:13px; height:13px; float:left}
+.comment_word_cs_ks{ width:13px; height:13px; float:left; margin-top:4px}
+.comment_word_cs_w{ font-size:12px;width:210px; height:13px; float:left; margin-left:4px; display:inline; _margin-top:2px}
+.comment_word_r{ width:59px; height:25px; float:right; }
+.comment_word_rs{ width:59px; height:21px; line-height:21px; background-image: url(../images/application_button.gif); color:#FFF; cursor:pointer; display:block}
+
+/*------------- 职友们在干嘛 E------------*/
+
+/*------发布信息人物内容 S-------*/
+.operate{ clear:both; display:block;}
+.pub_time{ text-align:left; float:left; color:#979696; font-size:12px}
+.pub_time a{ color:#ccc;}
+.pub_time a:hover{ text-decoration:underline;}
+.pub_caozuo{ text-align:right; float:right; margin-right:0px; margin-bottom:3px; display:inline; color:#ccc;}
+.pub_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pub_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pubb_caozuo{ text-align:right; float:right; color:#ccc;}
+.pubb_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pubb_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pub_caozuo a i{ font-style:normal;}
+/*------发布信息人物内容 S-------*/
+
+/***原文转发 S ***/
+.pub_comment{ width:600px; height:auto; overflow:hidden; background:#fff; border:4px solid #cdcdcc;text-align:left}
+.quote{ width:600px; height:24px; background-color:#edf4f8;}
+.quote_l{ width:130px; height:24px; line-height:24px; color:#000 ; float:left; margin-left:5px; display:inline; }
+.quote_r{ width:9px; height:9px; background-color:#edf4f8; float:right; margin:6px 15px 0 0; display:inline}
+.quote_txt{ width:580px; height:auto; float:left; padding:10px; color:#333}
+.quote_pic{ width:580px; height:18px; float:left; padding:0 10px;}
+.quote_pic_l{ width:18px; height:18px; float:left; cursor: pointer}
+.quote_pic_r{ width:117px; height:18px; line-height:18px; float:right; color:#666}
+.quote_con{ width:575px; height:50px; float:left; margin:10px 0 0 0;padding:0 10px;}
+.quote_cons{ width:575px; height:50px; font-size:12px; color:#666;border:1px solid #CCC;overflow-y:hidden}
+.quote_button{ width:580px; height:19px;  float:left; padding:10px; margin-top:10px}
+.quote_buttons{ width:47px; height:19px; line-height:19px; background-image: url(../images/pl_bg.gif)}
+.quote_button_l{ width:47px; height:19px;  float:left; margin-left:230px; display:inline}
+.quote_button_r{ width:47px; height:19px;  float:left; margin-left:20px; display:inline}
+
+/***原文转发 E ***/
+
+/*--------------评论和回复 S----------------*/
+.comment_box_dw{ width:437px; float:left; margin-bottom:10px; margin-left:15px; display:inline}
+.comment_box_dw dl{ width:437px; padding-bottom:15px}
+.comment_box_dw dl dt{ width:30px; height:30px;}
+.comment_box_dw dl dd{ width:397px; line-height:18px; margin-left:10px; color:#666; text-align:left; float:right}
+.comment_box_dw dl dd span{ float:right; text-align:right; color:#CCC}
+/*--------------评论和回复 E----------------*/
+
+/*------加载更多 S------*/
+.loadmore{ width:539px; height:26px; background-image:url(../images/friend_postmore.gif); float:left; margin-left:7px; display:inline; margin-bottom:10px}
+.loadmore span{ float:left; margin:3px 0 0 257px; display:inline;cursor:pointer; color:#f88c04; font-weight:bold}
+/*------加载更多 E------*/
+/**********************************************528首页新加样式 S ****************************************************/
+/**** 简历管理 S ****/
+.r_complete{ font-size:12px; font-weight:bold; color:#000; margin-top:10px; text-align:left; margin-left:10px; }
+.r_percentage{ text-align:left; margin-left:10px; margin-top:4px;}
+.an_percentage{ width:95px; height:11px; display:block; float:left; border:1px solid #ccc; margin-right:5px; margin-top:2px; overflow:hidden;}
+.index_con_l .resume .resume_list{ width:163px; float:left; background-image:url(../images/resumebg.gif); padding-bottom:10px; padding-top:-14px; *padding-top:4px;}
+.yellow{ height:11px; background:url(../images/resume/plan_bg.gif) repeat-x; width:80px; float:left;}
+.an_numeber{ float:left; background:none;}
+.rh_detail{ clear:both; text-align:left; padding-top:10px; *padding-top:3px;}
+.rh_detail li{margin-bottom:0;padding-left:5px;margin-top:0; height:19px; border-bottom:1px solid #e0e0df; color:#333; padding-top:5px; padding-left:6px;}
+.rh_detail li a{padding-left:26px;background:url(../images/resume/ico_resume.png) no-repeat;text-align:left;display:block;line-height:16px;height:16px;margin-left:5px;float:left;}
+.rh_detail li a.fun_1{background-position:0 0;}
+.rh_detail li a.fun_2{background-position:0 -22px;}
+.rh_detail li a.fun_3{background-position:0 -40px;}
+.rh_detail li a.fun_4{background-position:0 -59px;}
+.rh_detail li a.fun_5{background-position:0 -80px;}
+.rh_detail li a.fun_6{background-position:0 -101px;}
+.rh_detail li a.fun_7{background-position:0 -122px;}
+.resume_help_bot{ margin-top:12px; margin-bottom:-5px;}
+.resume_help_bot a{ font-size:14px; font-weight:bold; color:#ff7300;}
+/**** 简历管理 E ****/

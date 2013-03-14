@@ -1,0 +1,169 @@
+﻿ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>528招聘网_528人才网-招聘，找工作，交友上528 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="UTF-8" />
+<meta name="keywords" content="招聘 求职 招聘网 人才网 找工作" />
+<meta name="description" content="528招聘网是中国最具知名度的人才网站之一，为求职者提供全国企业招聘信息，免费注册简历找工作；为企业提供网络招聘、校园招聘、猎头服务、高级人才推荐、企业培训在内的一站式人力资源服务。" />
+<meta name="author" content="Copyright 2004 528.cn" />
+<meta name="Robots" content="all" />
+<meta http-equiv="windows-Target" content="_top" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="home" title="首页" href="http://www.528.cn" /> 
+<link href="http://www.528.cn/css/528_head_foot.css" rel="stylesheet" type="text/css" />
+<link href="css/my_login.css" rel="stylesheet" type="text/css" />
+<title>528个人登录页面</title>
+<script type="text/javascript" src="http://www.528.cn/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.528.cn/js/validate.js" ></script>
+<script type="text/javascript" src="http://www.528.cn/js/index.js"></script>
+<script type="text/javascript" src="http://www.528.cn/js/cookie.js"></script>
+<script type="text/javascript" src="js/weibo/sinaWeibo.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://www.528.cn/js/index_search.js" defer="defer"></script>
+ <script type="text/javascript">
+
+    <!--
+
+    var login = function(){
+      var host = getRootPath();
+      var loginName = $.trim($("#loginName").val());
+      var pwd = $.trim($("#password").val());
+      $.post(host + "/AjaxServlet", {"action" : "userlogin","loginName":loginName,"pwd":pwd},
+       function(data) {
+          if(data == "0"){
+             window.location.href = host;
+          }else if(data == "-1"){
+             alert("此账号不存在或密码错误！");
+          }else{
+             alert("登录失败！");
+          }
+	  });
+   }
+  
+
+   function getRootPath(){
+     var strFullPath=window.document.location.href;
+     var strPath=window.document.location.pathname;
+     var pos=strFullPath.indexOf(strPath);
+     var prePath=strFullPath.substring(0,pos);
+     var postPath=strPath.substring(0,strPath.substr(1).indexOf('/')+1);
+     return(prePath+postPath);
+  }
+
+    -->
+
+    </script>
+
+</head>
+<body>
+<!-- 头部 S -->
+<!-- 头部 S -->
+<div class="area_head">
+	<span class="area_logo"><a href="/"><img src="http://www.528.cn/imgs/index/logo.gif" alt="528招聘网" /></a></span>
+    <span class="top_nav"><a href="http://www.528.cn">首页</a><a href="http://www.leaderpower.com.cn/" target="_blank">高级猎头</a><a href="http://www.528.cn/member/memberReg/register.jsp" target="_blank">企业注册</a><span class="top_nav_special"><a href="http://www.528.cn/personal/reg/my_regone.jsp">个人注册</a>|<a href="/">登录</a></span></span>
+</div>
+<!-- 头部 E -->
+<!-- 头部 E -->
+<!-- 导航 S -->
+<div class="area_nav">
+	<p class="area_nav_top"><a class="area_nav_top_img" href="/personal/my_login.jsp"><img src="http://www.528.cn/imgs/login/myjob.gif" /></a><a href="http://www.528.cn/public/higherSearch.jsp">岗位搜索</a><a href="/profile/">简历管理</a><!-- <a href="/school/">校园招聘</a> --><a class="other_location" href="#">地区频道<img src="http://www.528.cn/imgs/search/search_location.gif" onmouseover="showCity()"/></a><a class="area_nav_top_corp" href="/member/login.jsp" style="display: none;">企业登录</a></p>
+  <!--  <p class="area_nav_bottom person_nav"><a href="/personal/center/index.jsp">个人中心</a>|<a href="/personal/center/resume_cn/resumeindexcn.do">我的简历</a>|<a href="/personal/center/util/my_favourite.do">职位收藏夹</a>|<a href="/seacherlist.do">个人搜索器</a>|<a href="/personal/center/util/my_applyhistory.do">应聘历史记录</a><!-- |<a class="rencai" href="/showme/serverIntro.jsp">人才自荐</a>|<a class="rencai" href="/personal/center/commend/">人才推荐</a> </p>-->
+</div>
+<!-- 导航 E -->
+<!-- 弹出地区 S -->
+    <div id="showLetter" class="login_pop_detail" style="width:520px; height:auto; display: none ;position: absolute;">
+         <!--by ivy -->
+<div class="area_pop">
+ <p class="area_pop_tit">按拼音选择</p>
+ <table width="462" border="0" cellspacing="0" cellpadding="0" >
+   <tr >
+      <td>
+          <table >
+              <tr><th>B</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/beijing.html">北京</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/baotou.html">包头</a></td></tr>
+              <tr><th>C</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/changchun.html">长春</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/changsha.html">长沙</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/chengdu.html">成都</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/chongqing.html">重庆</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/changzhou.html">常州</a></td></tr>
+              <tr><th>D</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/dalian.html">大连</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/guangdong.html">东莞</a></td></tr>
+              <tr><th>F</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/fuzhou.html">福州</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/foshan.html">佛山</a></td></tr>
+              <tr><th>G</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/guangzhou.html">广州</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/guiyang.html">贵阳</a></td></tr>
+              <tr><th>H</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/haerbin.html">哈尔滨</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/hangzhou.html">杭州</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/hefei.html">合肥</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/haikou.html">海口</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/huhehaote.html">呼和浩特</a></td></tr>
+              <tr><th>J</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/jiaxing.html">嘉兴</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/jinhua.html">金华</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/jilin.html">吉林</a></td></tr>
+              <tr><th>K</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/kunming.html">昆明</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/kunshan.html">昆山</a></td></tr>
+              <tr><th>L</th><td colspan="5" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/lanzhou.html">兰州</a> </td></tr>
+          </table>
+      </td>
+      <td>
+          <table style="margin-top:-10px;">
+              <tr><th nowrap="nowrap">N</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/nanjing.html">南京</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/nanchang.html">南昌</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/nantong.html">南通</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/nanning.html">南宁</a></td></tr>
+              <tr><th nowrap="nowrap">S</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/shanghai.html">上海</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/shenzhen.html">深圳</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/shenyang.html">沈阳</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/shijiazhuang.html">石家庄</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/suzhou.html">苏州</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/sanya.html">三亚</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/shaoxing.html">绍兴</a></td></tr>
+              <tr><th nowrap="nowrap">Y</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/qingdao.html">青岛</a></td><td colspan="7" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/quanzhou.html">泉州</a></td></tr>
+              <tr><th nowrap="nowrap">T</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/tianjin.html">天津</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/taiyuan.html">太原</a></td><td colspan="5" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/taizhou.html">台州</a></td></tr>
+              <tr><th nowrap="nowrap">W</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/Wuhan.html">武汉</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/wuxi.html">无锡</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/wenzhou.html">温州</a></td><td colspan="4" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/wulumuqi.html">乌鲁木齐</a></td></tr>
+              <tr><th nowrap="nowrap">X</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/xian.html">西安</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/xiamen.html">厦门</a></td><td colspan="5" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/xuzhou.html">徐州</a></td></tr>
+              <tr><th nowrap="nowrap">Y</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/yantai.html">烟台</a></td><td colspan="7" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/yangzhou.html">扬州</a></td></tr>
+              <tr><th nowrap="nowrap">Z</th><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/zhangzhou.html">漳州</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/zhengzhou.html">郑州</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/zhongshan.html">中山</a></td><td align="left" nowrap="nowrap"><a href="http://www.528.cn/area/zhuhai.html">珠海</a></td><td colspan="3" align="left" nowrap="nowrap"><a href="http://www.528.cn/area/zhenjiang.html">镇江</a></td></tr>
+          </table>
+      </td>
+  </tr>
+</table>
+</div>    
+    </div>
+<!-- 弹出地区 E -->
+<!-- my_login S -->
+<form id="loginForm" method="post" >
+<div id="my_login">
+<div class="my_loginz">
+<ul>
+<li><p class="pp">找工作</p>海量职位 随心投递</li>
+<li><p class="pp">交朋友</p>茫茫职海 任我遨游</li>
+<li><p>搜索和订阅</p>个性定制 定期发送</li>
+<li><p class="pp">我的简历</p>多份简历 多种选择</li>
+</ul>
+</div>
+<!-- my_loginz S -->
+<div class="my_loginy">
+<div class="my_loginy_tbg"></div>
+<div class="my_loginy_mbg">
+<p><img src="http://www.528.cn/imgs/login/personalt.gif" alt="" /></p>
+<ul>
+<li><span style=" width:54px; height:21px; line-height:21px;">会员名：</span><input name="loginName" id="loginName" onkeydown="toTab()" onBlur="if(this.value=='')this.value='用户名或邮箱...';" onfocus="if(this.value=='用户名或邮箱...')this.value='';"  type="text" style=" width:145px; height:19px; line-height:19px; border:1px solid #808080;"/></li>
+<li><span style="width:54px; height:21px; line-height:21px;">密&nbsp;码：</span><input name="password" id="password" onKeyDown="javascript: if(window.event.keyCode==13) login();" onBlur="if(this.value=='')this.value='用户名或邮箱...';" onfocus="if(this.value=='用户名或邮箱...')this.value='';"  type="password" style=" width:145px; height:19px; line-height:19px; border:1px solid #808080;"/></li>
+<li class="zid"><input name="" type="checkbox" value="" />自动登录</li>
+<li class="deng"><input name="loginBut" onclick="login();" type="button"/><span class="forget"><a href="http://www.528.cn/public/util/getUserPwd.jsp">忘记密码</a></span><span class="register_new"><a href="http://www.528.cn/personal/reg/my_regone.jsp">申请新会员</a></span></li>
+</ul>
+<p class="other_login"><a href="#" target="_blank"><img src="images/login/sina_login.gif" id="sinaWeiboLoginBtn"  /></a><a href="#" target="_blank"><img src="images/login/qq_login.gif" /></a></p>
+</div>
+<div class="my_loginy_bbg"></div>
+</div>
+</div>
+<div class="zhuy">
+<div class="zhuyz"></div>
+<div class="zhuym">
+<div class="zhuym_tub"><img src="http://www.528.cn/imgs/login/tub.gif" alt="" /></div>
+<div class="zhuym_cont">
+<h3>求职注意：</h3>
+<p>非法黑中介收取报名费；虚假的“高薪招聘”，巧立名目收取各类押金……</p>
+<p>求职者要时刻睁大眼睛，谨防招聘骗局！</p>
+</div>
+</div>
+<div class="zhuyy"></div>
+</div>
+</form>
+<!-- my_login E -->
+ 
+<!-- 底部 S -->
+
+ 
+<!-- 底部 S -->
+<div class="foot">
+	<p class="foot_nav"><a href="http://www.528.cn/public/about.jsp">关于我们</a>|<a href="http://www.528.cn/public/lianxi.jsp">联系我们</a>|<!-- <a href="/public/zp_member.jsp">收费标准</a>| --><a href="http://www.528.cn/public/famous_user.jsp">著名用户</a>|<a href="http://www.528.cn/public/famous_school.jsp">著名高校</a>|<a href="http://www.528.cn/public/hr/" target="_blank">工作机会</a>|<a href="http://weibo.com/2179017940/profile/" target="_blank">官方微博</a>|<a href="http://blog.sina.com.cn/s/blog_60939b8b0100yq5i.html" target="_blank">代理招商</a></p>
+    <p class="foot_text"><a href="http://www.36.cn" target="_blank">36人才</a>旗下网站：<a href="http://www.528.cn/" target="_blank">528招聘网</a>  <a href="http://www.buildjob.net/" target="_blank">中国建筑人才网</a>  <a href="http://www.tourjob.net/" target="_blank">中国旅游人才网</a>  <a href="http://www.carjob.com.cn/" target="_blank">中国汽车人才网</a>  <a href="http://www.doctorjob.com.cn/" target="_blank">中国医疗人才网</a>  <a href="http://www.pjob.net/" target="_blank">中国印刷人才网</a>  <a href="http://www.hgjob.com/" target="_blank">中国化工招聘网</a>  <a href="http://www.jrjob.net/" target="_blank">中国金融人才网</a>  <a href="http://www.epjob.com.cn/" target="_blank">中国电力人才网</a></p>
+	<p class="foot_text">人才招聘：服务热线400 0998 528 或Email: <a href="mailto:hr@528.cn">hr@528.cn</a> 个人求职: Email:<a href="mailto:club@528.cn">club@528.cn</a>　或垂询400 0998 528 </p>     
+	<p class="foot_text">Copyright <span style="font-family:Arial, Helvetica, sans-serif; padding-right:5px;">&copy;</span>528招聘网 1999-2011, All Rights Reserved </p>
+        <p class="foot_text">京ICP证020327号 北京市公安局海淀分局备案编号：1101082155 </p>
+        <p class="foot_text">深圳市万泉河科技有限公司<span style="font-family:Arial, Helvetica, sans-serif;">&copy;</span> 版权所有</p>
+</div>
+<p style="display:none"><script src="http://s21.cnzz.com/stat.php?id=3177156&web_id=3177156&show=pic" language="JavaScript"></script></p>
+<!-- 底部 E -->
+<!-- 底部 E -->
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<mailConfig>
+		<serverName>mail.528.cn</serverName>
+		<serverEmail>ok528@528.cn</serverEmail>
+		<serverEmailPwd>job52820120613</serverEmailPwd>
+		<senderName>528招聘网</senderName>
+		<contentType>text/html;charset=gb2312</contentType>
+	</mailConfig>
+</configs>

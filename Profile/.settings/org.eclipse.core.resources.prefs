@@ -1,0 +1,11 @@
+#Thu Aug 30 16:11:59 CST 2012
+eclipse.preferences.version=1
+encoding//src/com/job528/util/web/Cookies.java=GBK
+encoding//src/config.properties=UTF-8
+encoding//src/log4j.properties=UTF-8
+encoding//src/spring/jdbc.properties=UTF-8
+encoding//src/spring/quartz.properties=UTF-8
+encoding//src/xwork-conversion.properties=UTF-8
+encoding//web/WEB-INF/set.properties=UTF-8
+encoding//web/login.jsp=UTF-8
+encoding//web/setting/weibo_sync_inner.jsp=UTF-8

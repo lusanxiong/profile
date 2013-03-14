@@ -1,0 +1,148 @@
+/******* 简历中心 S   ******/
+.resume{ width:960px; height:696px; overflow:hidden; margin-left:auto; margin-right:auto; text-align:center; margin-top:15px; font-size:12px;}
+.resume_top{ width:960px; height:7px; overflow:hidden;}
+.rt_left{ width:7px; height:7px; background:url(../images/resume/orange_top_left.gif) no-repeat; display:block; float:left;}
+.rt_mid{ width:946px; height:7px; background:url(../images/resume/orange_top_bg.gif) repeat-x; display:block; float:left;}
+.rt_right{ width:7px; height:7px; background:url(../images/resume/orange_top_right.gif) no-repeat; display:block; float:right;}
+.resume_con{ width:958px; height:auto; overflow:hidden; border-left:1px solid #f7b14b; border-right:1px solid #f7b14b; background:#fff7f0;}
+.resume_bot{width:960px; height:7px; overflow:hidden;}
+.rb_left{ width:7px; height:7px; background:url(../images/resume/orange_bot_left.gif) no-repeat; display:block; float:left;}
+.rb_mid{ width:946px; height:7px; background:url(../images/resume/orange_bot_bg.gif) repeat-x; display:block; float:left;}
+.rb_right{ width:7px; height:7px; background:url(../images/resume/orange_bot_right.gif) no-repeat; display:block; float:right;}
+/******* 简历中心 E ******/
+/******* 简历助手 S ******/
+.helper_detail{width:177px; height:auto; overflow:hidden; float:left; margin-top:15px; margin-left:10px; _margin-left:5px;}
+.resume_helper{ width:173px; height:auto; overflow:hidden; border:2px solid #ff8c28; background:#fff3e0; padding-bottom:5px;   }
+.rh_title{ width:173px; height:31px; background:url(../images/resume/jianli_help.gif) repeat-x; display:block; color:#000;line-height:34px;text-align:center;font-size:14px; font-weight:bold;}
+.r_complete{ font-size:12px; font-weight:bold; color:#000; margin-top:10px; text-align:left; margin-left:10px; }
+.r_percentage{ text-align:left; margin-left:10px; margin-top:4px;}
+.an_percentage{ width:95px; height:11px; display:block; float:left; border:1px solid #ccc; margin-right:5px; margin-top:2px; overflow:hidden;}
+.yellow{ height:11px; background:url(../images/resume/plan_bg.gif) repeat-x; width:80px; float:left;}
+.an_numeber{ float:left;}
+.rh_detail{ clear:both; text-align:left; margin-top:10px;}
+.rh_detail li{margin-bottom:0;padding-left:5px;margin-top:0;height:24px;height:20px; border-bottom:1px solid #ffd5b7; color:#333; font-weight:bold; padding-top:5px; padding-left:6px;}
+.rh_detail li a{padding-left:21px;background:url(../images/resume/ico_resume.png) no-repeat;text-align:left;display:block;line-height:16px;height:16px;margin-left:5px;float:left; text-decoration:underline;}
+.rh_detail li a.fun_1{background-position:0 0;}
+.rh_detail li a.fun_2{background-position:0 -22px;}
+.rh_detail li a.fun_3{background-position:0 -40px;}
+.rh_detail li a.fun_4{background-position:0 -59px;}
+.rh_detail li a.fun_5{background-position:0 -80px;}
+.rh_detail li a.fun_6{background-position:0 -101px;}
+.rh_detail li a.fun_7{background-position:0 -122px;}
+.rh_detail li span{background:url(../images/resume/ico_resume.png) 0 -160px;height:15px;width:16px;display:block;float:left;margin-left:5px;overflow:hidden}
+.resume_help_bot{ margin-top:10px;}
+.resume_save{ width:87px; height:41px; display:block; float:left; padding-left:20px;}
+.resume_save input{ width:87px; height:41px; background:url(../images/resume/resume_save.gif) no-repeat; display:block; border:none; cursor:pointer;}
+.resume_clew_txt{background:url(../images/resume/jobseeker.png) no-repeat 0 -150px;clear:both;height:96px;width:150px;overflow:hidden;color:#FF4E00;line-height:150%;padding-top:20px;padding-right:17px;padding-left:8px; text-align:left;}
+a.n_previewResume{ font-size:12px; font-weight:bold; float:left; margin-top:10px; margin-left:4px; color:#ff7300;}
+a.n_previewResume:hover{ text-decoration:underline;}
+/******* 简历助手 E ******/
+/******* 简历主体 S ******/
+.resume_detail{ width:760px; *width:756px; height:auto; overflow:hidden; float:left; margin-top:13px; margin-left:6px; background:#fff; padding-left:4px;}
+.resume_chinese{width:758px; line-height:25px;clear:both;height:25px;margin-bottom:0px; +margin-bottom:5px; display:block; padding-top:6px;}
+.resume_chinese h1{font-size:22px;float:left; height:35px;letter-spacing:1px; font-weight:bold; margin-top:6px;}
+.RB_resumeSet{float:right;margin-top:3px;margin-right:10px; display:block;}
+.RB_resumeSet span{display:block;float:left;background:url(../images/resume/jobseeker_icon.png) no-repeat 0 -146px;padding-left:18px}
+.RB_resumeSet a{height:17px;overflow:hidden;line-height:22px;text-align:center;display:block;border:none;float:left;margin-left:10px; margin-top:6px;} 
+.RB_resumeSet a img{ border:none;}
+.resume_box{ width:756px; height:610px; overflow:auto; overflow-x:hidden;}
+.resume_box dl{clear:both;margin-top:6px;margin-bottom:15px; width:745px; overflow:auto; overflow-x:hidden;}
+.resume_box dl dt{lear:both;height:29px; background:url(../images/resume/new_rim.gif) repeat-x;}
+.resume_box dl dt .item_name{font-size:14px;font-weight:700;color:#ff7101;float:left;height:35px;line-height:35px;background:url(../images/resume/ico_title.gif) no-repeat left center;padding-left:9px;margin-left:8px}
+.advert{float:left;background:url(../images/resume/jobseeker_icon.png) no-repeat 0 -208px;padding-top:3px;padding-left:18px;margin-left:10px;margin-top:8px; padding-right:10px;}
+.resume_fun_box{float:right;margin-top:10px;margin-right:9px; _margin-right:5px;}
+.resume_box dt .resume_fun_box a{display:block;height:17px;width:45px;line-height:18px;text-align:center;padding-left:8px;overflow:hidden}
+.resume_fun_box a img{ border:none;}
+.info_table{clear:both;margin-top:10px;margin-bottom:10px;overflow:hidden;height:auto; width:745px;}
+.resume_left{width:650px;float:left;padding-left:15px; overflow:hidden;}
+.resume_right{width:50px;float:right;padding-right:5px; overflow:hidden;}
+.info_table table{background-color:#e9edf1}
+.info_table th{font-weight:400; padding:5px;background-color:#f3f7f9; font-weight:bold; color:#333;}
+.info_table td{ padding:5px;background-color:#FFF;}
+.add_info{clear:both;margin-right:auto;margin-left:auto;padding-top:10px}
+.resume_addInfo{background:url(../images/resume/jobseeker.png) no-repeat -380px -151px;height:20px;width:65px;overflow:hidden;display:block;color:#e36500;overflow:hidden;margin-right:auto;margin-left:auto;text-align:center;padding-top:0px; *padding-top:4px;}
+a.new_FB_a_1{ clear:both; width:45px; height:17px; margin-left:0px; margin-bottom:10px; display:block; margin-top:3px;}
+a.new_FB_a_1 img{ border:none; width:45px; height:17px;}
+.resume_profile_wbk{ padding-left:5px; border:1px solid #ccc; height:20px; line-height:20px;}
+.resume_profile_wbks{ width:20px; padding-left:5px; border:1px solid #ccc; height:16px; line-height:16px;}
+.blankline{ clear:both; background:url(../images/resume/search_line.gif) repeat-x; margin:10px auto 0px auto;width:730px; height:1px; }
+.font_hilite{ color:#F00; font-weight:normal}
+.exper_title{ margin-left:12px; *margin-left:-10px;}
+.resume_profile_select{ width:126px; height:22px; text-align:center; line-height:22px; background-image: url(../images/profile_sel.gif);float:left; font-size:12px;}
+.item_name_2{clear:both;padding-top:0;padding-right:10px;padding-left:0;background:url(../images/resume/line.gif) repeat-x 0 10px;line-height:20px;height:20px;margin-top:0px; display:block; margin-left:18px;}
+.item_name_2 h1{font-size:12px;font-weight:700;color:#f66e00;line-height:20px;height:20px;overflow:hidden;float:left;padding-right:5px;background-color:#FFF}
+.photo_fun{ padding-left:25px;}
+a.photo_but1{background:url(../images/resume/jobseeker_icon.png) no-repeat 0 -125px;height:25px;width:40px;overflow:hidden;line-height:25px;text-align:center;display:block;float:left;margin-left:4px;color:#e36500;padding-left:5px}
+a.photo_but2{background:url(../images/resume/jobseeker_icon.png) no-repeat 0 -106px;height:25px;width:40px;overflow:hidden;line-height:25px;text-align:center;display:block;float:left;margin-left:4px;color:#e36500;padding-left:5px}
+.edit{ width:17px; height:17px; background:url(../images/resume/jobseeker_icon.png) 0px -39px no-repeat; display:block; float:left; margin-left:15px;}
+.del{ width:17px; height:17px; background:url(../images/resume/jobseeker_icon.png) 0px -70px no-repeat; display:block; margin-left:10px; *margin-left:0px;}
+.point{ color:#ff0000; background:url(../images/resume/icon_error.gif) no-repeat; padding-left:20px; padding-top:2px;}
+.w720{ width:720px; padding-left:15px; *padding-left:0px;}
+.edit_title{ position:relative;}
+.edit_top{ position:absolute; background:#fff7f0;  text-align:left; margin-left:0px; left:250px; *left:223px;  top:3px; *top:0px; _left:-154px; _top:-5px; float:right;}
+.edit_top table{ text-align:left; background-color:#e9edf1; border:1px solid #f7b14b;}
+.edit_top table th{font-weight:400; padding:2px;background-color:#fff7f0; font-weight:bold; color:#333;}
+.edit_top table td{ padding:2px; background-color:#fff7f0;}
+.edit_tishi{color:#9d9d9d; padding-left:2px;} 
+.n_tishi{ color:#8b8a8a;}
+.work_table{ width:723px; background:#f3f3f3; border:1px solid #e0e0e0; margin-left:14px; *margin-left:10px;}
+.work_table table{ background:none;}
+.work_table table td{ background:none;}
+.resume_saving{ clear:both; background:url(../images/loading.gif) no-repeat; color:#5d5c5c; padding-left:0px; margin-left:25px; _margin-left:15px; float:left; padding-left:22px; margin-top:5px; *margin-top:0px; height:18px;}
+.resume_radio{margin-top:3px; display:block; float:left; margin-right:2px;}
+.radio_name{ display:block; float:left; margin-right:2px;}
+.info_table_it{ margin-top:0px;}
+/******* 简历主体 E ******/
+/**** 528保存简历 S ****/
+#resumesave{ margin:13px auto 0px auto; width:848px; height: auto; clear:both  }
+.resumesave_top_lebg{ width:7px; height:6px;float:left; background: url(../images/resume/left.gif) no-repeat}
+.resumesave_top_middle{ width:834px; height:5px;float:left; border-top:1px solid #ff9800; background:#fff4e5; display:block; overflow:hidden; }
+.resumesave_top_ribg{ width:7px; height:6px; float:left; background: url(../images/resume/right.gif) no-repeat}
+.resumesave_bottom_lebg{ width:7px; height:6px; float:left; background: url(../images/resume/b_left.gif) top no-repeat;}
+.resumesave_bottom_middle{ width:834px; height:5px;  float:left; border-bottom:1px solid #ff9800; background:#fff4e5; display:block;overflow:hidden; }
+.resumesave_bottom_ribg{ width:7px; height:6px; float:left; background: url(../images/resume/b_right.gif) top no-repeat}
+.resumesave_cont{ clear:both; height: auto; border-left:1px solid #ffa116; border-right:1px solid #ffa116; background:#fff4e5; _margin-top:-10px;_margin-bottom:-1px;}
+.resumesave_contcc{ height: 184px;  background:#fefaef; margin-left:5px; margin-right:5px; text-align: center;}
+.resumesave_title{ width:810px; text-align:left;  display:block; height:46px; border-bottom:1px solid #ffbf77; margin:0px auto 5px auto; padding-top:8px; }
+.resumesave_title ul li{ float:left; margin-right:6px;}
+.resumesave_title ul li.sec{ display:block; padding-top:8px; margin-right:20px;}
+.resumesave_title ul li.yulan{ display:block; padding-top:3px; margin-right:20px;}
+.resumesave_title ul li.tishid{ display:block; padding-top:12px; float:left }
+.resumesave_title h3{ float:left; padding-top:10px; *padding-top:14px;  font-size:14px; font-weight:bold}
+.resumesave_tup{ width:810px; height:101px; text-align:left;  display:block; clear:both; margin:12px auto 4px auto; background:url(../images/resume/save.gif) no-repeat center}
+.resumesave_tup ul{ margin-left:18px; padding-top:74px;}
+.resumesave_tup ul li{ float:left;}
+.resumesave_tup ul li span{ color:#ff5b29; letter-spacing:-1px; margin-left:-2px;}
+.resumesave_tup ul li.wans{ float:left; width:192px; color:#5b5b5b; font-size:14px; font-weight: bold; margin-left:100px; _margin-left:50px; }
+.resumesave_tup ul li.work{ float:left; width:192px; color:#5b5b5b; font-size:14px; font-weight: bold; margin-left:16px;  }
+.resumesave_tup ul li.search{ float:left; width:174px; color:#5b5b5b; font-size:14px; font-weight: bold; margin-left:12px;  }
+/**** 推荐 ****/
+#job_jian{ margin:24px auto 0 auto;*margin:14px auto 0 auto !important; _margin:8px auto 0 auto; width:848px; height: auto; clear:both;  }
+.job_jian_top_lebg{ width:7px; height:7px;float:left; background: url(../images/resume/jian_le.gif) no-repeat}
+.job_jian_top_middle{ width:834px; height:5px;float:left; border-top:1px solid #d6d6d6; background:#fff; display:block; overflow:hidden; }
+.job_jian_top_ribg{ width:7px; height:7px; float:left; background: url(../images/resume/jian_ri.gif) no-repeat}
+.job_jian_bottom_lebg{ width:7px; height:7px; float:left; background: url(../images/resume/jian_bb_le.gif) top no-repeat;}
+.job_jian_bottom_middle{ width:834px; height:6px;  float:left; border-bottom:1px solid #d6d6d6; background:#f6f6f6; display:block;overflow:hidden; }
+.job_jian_bottom_ribg{ width:7px; height:7px; float:left; background: url(../images/resume/jian_bb_ri.gif) top no-repeat}
+.job_jian_cont{ clear:both; height: auto; border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6; background:#f6f6f6; _margin-top:-10px;_margin-bottom:-1px; text-align:left; color:#181818}
+.job_title{ height:30px; width:830px; text-align:left; background: url(../images/resume/title_bg.gif) repeat-x; display:block; padding-left:16px; border-bottom:1px solid #dddcdc; padding-top:4px; }
+.tdtitle{ border-bottom:1px solid #e9e9e9; font-weight:bold; height:30px; color:#787878;}
+.job_jian_cont table{ margin-top:9px;}
+.job_jian_cont td{ padding-left:6px; line-height:25px; }
+.job_jian_cont table td a.job_focuse:hover{ text-decoration:underline;}
+/**** 528保存简历 E ****/
+/**** 上传照片 S ****/
+.edit_photo{ width:730px; height:520px; overflow:hidden; margin-left:10px; margin-top:10px; margin-bottom:10px; margin-right:10px;}
+.photo_top{ width:730px; height:7px; overflow:hidden;}
+.pt_left{ width:7px; height:7px; background:url(../images/resume/orange_top_left.gif) no-repeat; display:block; float:left;}
+.pt_mid{ width:716px; height:7px; background:url(../images/resume/orange_top_bg.gif) repeat-x; display:block; float:left;}
+.pt_right{ width:7px; height:7px; background:url(../images/resume/orange_top_right.gif) no-repeat; display:block; float:right;}
+.photo_bot{width:730px; height:7px; overflow:hidden;}
+.pb_left{ width:7px; height:7px; background:url(../images/resume/orange_bot_left.gif) no-repeat; display:block; float:left;}
+.pb_mid{ width:716px; height:7px; background:url(../images/resume/orange_bot_bg.gif) repeat-x; display:block; float:left;}
+.pb_right{ width:7px; height:7px; background:url(../images/resume/orange_bot_right.gif) no-repeat; display:block; float:right;}
+.photo_detail{ width:728px; height:auto; overflow:hidden; border-left:1px solid #f7b14b; border-right:1px solid #f7b14b; background:#fff7f0;}
+.photo_title{ width:728px; height:56px; background:url(../images/resume/photo_tit_bg.gif) repeat-x; margin-left:0px; margin-top:6px; text-align:left;}
+.photo_title span{ padding-left:15px;}
+.photo_detail{ height:500px;}
+/**** 上传照片 E ****/

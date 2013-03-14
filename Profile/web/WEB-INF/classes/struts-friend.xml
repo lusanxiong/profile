@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="friends" namespace="/friends" extends="struts-default">
+		<global-results>
+			<result name="login" type="redirect">/login.jsp</result>
+		</global-results>
+	    <action name="follow" class="com.job528.profile.action.FollowsAction">
+			<result name="success">/friends/follow.jsp</result>
+			<result name="error">/friends/index.jsp</result>
+		</action>
+		
+		<action name="fans" class="com.job528.profile.action.FollowsAction" method="fans" >
+			<result name="success">/friends/fans.jsp</result>
+		</action>
+		
+		<action name="otherfollow" class="com.job528.profile.action.FollowsAction" method="followsByUid" >
+			<result name="success">/friends/otherfollow.jsp</result>
+			<result name="follow" type="redirect-action">follow.shtml</result>
+		</action>
+		
+		<action name="otherfans" class="com.job528.profile.action.FollowsAction" method="fansByUid" >
+			<result name="success">/friends/otherfans.jsp</result>
+			<result name="fans" type="redirect-action">fans.shtml</result>
+		</action>
+		
+		<action name="search" class="com.job528.profile.action.SearchFriendAction">
+			<result name="success">/friends/search.jsp</result>
+			<result name="error">/friends/index.jsp</result>
+		</action>
+		
+		<action name="loadFriends" class="com.job528.profile.action.FriendsAction">
+			<result name="success">/friends/friends.jsp</result>
+		</action>
+		
+		<action name="randomFriends" class="com.job528.profile.action.RandomFriendAction">
+			<result name="success">/friends/randomfriends.jsp</result>
+		</action>
+		
+		<action name="sendMail" class="com.job528.profile.action.InviteAction" method="sendMail" />
+		
+		<action name="importInvite" class="com.job528.profile.action.InviteAction" method="importInvite">
+			<result name="success">/friends/invite2.jsp</result>		
+		</action>
+		
+		<action name="msnInvite" class="com.job528.profile.action.InviteAction" method="msnInvite">
+			<result name="success">/friends/invite2.jsp</result>		
+		</action>
+		
+	</package>
+</struts>

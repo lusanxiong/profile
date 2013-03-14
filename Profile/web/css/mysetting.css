@@ -1,0 +1,48 @@
+/******* 标签设置 S ******/
+.label{ width:700px; height:auto; overflow:hidden; margin-left:auto; margin-right:auto; text-align:center; margin-top:15px; margin-bottom:10px;}
+.label_tit{ float:left; display:block; margin-top:9px; *padding-left:40px; }
+.label_detail{ float:left; width:600px; overflow:hidden; padding-left:3px;}
+.add_label{ clear:both; padding-top:6px; *padding-top:2px;}
+.label_input{ display:block; float:left; padding-bottom:5px; }
+.label_input_h{ display:block; float:left; padding-bottom:5px; }
+.label_input input{ width:195px; height:23px; border:1px solid #c6c6c6; padding-top:2px;}
+.label_input_h input{ width:195px; height:23px; border:1px solid #ff0000; padding-top:2px;}
+.label_but{ display:block; margin-left:10px; float:left; }
+.label_but input{ width:80px; height:25px; background:url(../images/setting/label_but.gif) no-repeat; line-height:26px; color:#333; cursor:pointer;}
+.label_num{ clear:both; width:600px; text-align:left; margin-bottom:5px; overflow:hidden; white-space:normal; word-break:break-all;  }
+	.people_con_lists .label_num { width:auto; padding-bottom:10px;}
+.label_num a{height:22px;  cursor:pointer; margin-right:8px; margin-top:8px; float:left; *float:none;}
+.label_num a span{ height:20px; *height:22px; background-color:#ebebeb; background-image:url(../images/setting/ico_04.gif); background-repeat:no-repeat; padding-left:15px; background-position:3px 6px; float:left; padding-top:2px; *padding-top:4px; padding-top:3px\9\0; color:#333;}
+.label_num a em{ width:8px; height:22px;  display:block; float:left;/*background-color:#ebebeb;*/ background-image:url(../images/setting/ico_01.gif); background-repeat: repeat-x; background-position: right top;}
+	.bg_gray .label_num a em { background-image:url(../images/setting/ico_011.gif);}
+.label_num a.label_hover span,.label_num a p.label_hover span{ height:20px; *height:22px; background-color:#ffdcb1; background-image:url(../images/setting/ico_03.gif); background-repeat:no-repeat; padding-left:15px; background-position:3px 7px; float:left; line-height:16px; padding-top:2px; *padding-top:4px; padding-top:3px\9\0; color:#333;}
+.label_num a.label_hover em,.label_num a p.label_hover em{ width:8px; height:22px;  display:block; float:left;/*background-color:#ffdcb1;*/ background-image:url(../images/setting/ico_02.gif); background-repeat: repeat-x; background-position: right top;}
+	.bg_gray .label_num a.label_hover em {background-image:url(../images/setting/ico_022.gif)}
+.label_num a.label_hover_2 span{ height:20px; *height:22px; background-color:#ffdcb1; background-image:url(../images/setting/ico_05.gif); background-repeat:no-repeat; padding-left:3px; padding-right:12px; background-position:right; float:left; line-height:16px; padding-top:2px; *padding-top:4px; padding-top:3px\9\0; color:#333;}
+.label_num a.label_hover_2 em{ width:8px; height:22px;  display:block; float:left;background-color:#ffdcb1; background-image:url(../images/setting/ico_02.gif); background-repeat: repeat-x; background-position: right top;}
+.label_change{ text-align:right;}
+.label_change{ color:#ff8d00; cursor:pointer;}
+.label_num span.label_hover_3{height:22px;  cursor:pointer; margin-right:8px; margin-top:8px;  float:left; *float:none;}
+.label_num span.label_hover_3 span.label_focus{ height:22px;  background-color:#ffdcb1; padding-left:3px; padding-right:5px; color:#333; float:left; overflow:hidden;}
+.label_num span.label_hover_3 span.label_focus a.label_content_3{ clear:both; height:14px; float:left; display:block; margin-right:3px; margin-top:4px;}
+.label_num span.label_hover_3 span.label_focus img.label_img_3{ margin-top:5px;}
+.label_num span.label_hover_3 em{ width:8px; height:22px;  display:block; float:left;background-color:#ffdcb1; background-image:url(../images/setting/ico_02.gif); background-repeat: repeat-x; background-position: right top;}
+.label_num span.label_hover_4{height:22px;  cursor:pointer; margin-right:8px; margin-top:8px;}
+.label_num span.label_hover_4 span.label_focus{ height:22px;  background-color:#ff882a; padding-left:3px; padding-right:5px; color:#333; float:left; overflow:hidden;}
+.label_num span.label_hover_4 span.label_focus a.label_content_3{ clear:both; height:16px; float:left; display:block; margin-top:4px; margin-right:3px;}
+.label_num span.label_hover_4 span.label_focus img.label_img_3{ margin-top:5px;}
+.label_num span.label_hover_4 em{ width:8px; height:22px;  display:block; float:left;background-color:#ff882a; background-image:url(../images/setting/ico_07.gif); background-repeat: repeat-x; background-position: right top;}
+.label_change{ text-align:right;}
+/******* 标签设置 E ******/
+/******* 新浪同步 S ******/
+.tongbu{ width:700px; height:auto; overflow:hidden; margin-left:auto; margin-right:auto; text-align:center; margin-top:15px; margin-bottom:10px; padding-left:40px;}
+.tongbu_text{ line-height:20px; color:#555;  text-align:left;}
+.tongbu_img{ margin-top:15px;}
+.tongbu_table{ margin-top:10px;}
+.tongbu_table table{ background:#f9c89d; font-size:12px;}
+.tongbu_table table th{ background:#fff0e3; padding:5px; color:#eb7b1a;}
+.tongbu_table table td{ background:#fff; padding:5px; color:#df6801;}
+.tongbu_table table td a{ margin-right:10px;}
+.tongbu_table table td a:hover{ text-decoration:underline;}
+
+/******* 新浪同步 E ******/

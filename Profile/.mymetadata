@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Profile"
+  id="myeclipse.1321938279859"
+  context-root="/Profile"
+  j2ee-spec="5.0"
+  archive="Profile.war">
+  <attributes>
+    <attribute name="webrootdir" value="web" />
+  </attributes>
+</project-module>
+

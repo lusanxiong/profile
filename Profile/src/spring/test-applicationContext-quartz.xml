@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean name="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="updateLuceneSchedule"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="updateLuceneSchedule" class="org.springframework.scheduling.quartz.CronTriggerBean">
+	    <property name="jobDetail" ref="updateLuceneJob" />
+	    <property name="cronExpression" value="0 1 3,9,15,21 * * ?" />
+	</bean>		
+
+	<bean name="updateLuceneJob" class="org.springframework.scheduling.quartz.JobDetailBean">
+	  <property name="jobClass" value="com.job528.UpdateLuceneSchedule" />
+	     <property name="jobDataAsMap">
+	      <map>
+	      	<entry key="jobInfoIndexer">
+	        	<ref bean="jobInfoIndexerForUpdate"/>	       
+	       	</entry>
+		   <entry key="systemDataService">
+	       	<ref bean="systemDataService"/>
+	       </entry>	       	
+	      </map>
+	     </property>		  
+	</bean>	
+	
+	
+	
+</beans>

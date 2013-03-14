@@ -1,0 +1,1 @@
+1.weibo_syn.js//去除alert(); 8.9

@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+/*------职友们在干嘛发布信息 S-------*/
+.information_cons{width:665px; height:auto; overflow:hidden; text-align:center;padding-bottom:10px; float:left;}
+
+.information_cons dl{ width:665px; height:auto; overflow:hidden; clear:both; padding-bottom:5px; background-image:url(../images/content_line.gif); background-repeat:repeat-x; background-position:bottom; margin-top:12px; margin-bottom:8px; float:left}
+.information_cons dl dt{ float:left;}
+.information_cons dl dd{ float:left;}
+
+.information_cons dl dd.pub_cons{ width:665px; height:auto; text-align:left; line-height:20px; color:#4e4e4e; float:left; word-break:break-all; font-size:12px;}
+.information_cons dl dd.pub_cons a{ color:#028bd8;}
+.information_cons dl dd.pub_cons a:hover{color:#028bd8; text-decoration:underline;}
+
+/*------更多 S-----*/
+.information_more{text-align: center; margin-top:50px auto 8px auto}
+/*------更多 E-----*/
+
+/*------加载更多 个人主页 S------*/
+.loadmores{ height:26px; background-image:url(../images/friends_postmore.gif);}
+.loadmores span{ float:left; margin:2px 0 0 311px; display:inline;cursor:pointer; color:#f88c04; font-weight:bold}
+/*------加载更多 个人主页 E------*/
+
+/** 图片显示 放大 S  个人主页 **/
+.pub_addimgs{height:auto;margin-top:5px;}
+.pub_addimgs p.pub_img{ width:auto; height:auto;max-width:130px; max-height:130px;}
+.pub_addimgs p.pub_img img{ width:auto; height:auto;background:#fff; max-width:124px; max-height:124px;  border:1px solid #ccc; padding:2px; }
+.img_larges{ width:610px; height:auto; overflow:hidden;background:#f6f6f6; border:1px solid #e5e5e5; padding:5px; left:0px; top:0px; z-index:990; text-align:center; margin-top:5px; float:left}
+.img_turns{ text-align:left;}
+.img_turns a{ margin-right:20px; padding-left:13px;  color:#646464;}
+.img_turns a:hover{ text-decoration:none;}
+.img_turns a.it_1{ background:url(../images/photo_ico1.gif) 0px 2px no-repeat;}
+.img_turns a.it_2{ background:url(../images/photo_ico2.gif) 0px 2px no-repeat;}
+.img_turns a.it_3{ background:url(../images/photo_ico3.gif) 0px 2px no-repeat;}
+.img_turns a.it_4{ background:url(../images/photo_ico4.gif) 0px 2px no-repeat;}
+.img_turns img{ margin-left:auto; margin-right:auto; text-align:center; margin-top:10px; width:auto; height:auto;}
+/** 图片显示 放大 E **/
+
+
+/*** 个人主页 原文转发 S 个人主页***/
+.quotes_box{ width:625px;text-align:left; float:right; font-size:12px;}
+.quotes_pic{width:16px; height:8px; overflow:hidden; float:left; margin-left:15px; display:inline; margin-top:10px}
+.quotes{ width:610px;float:left; height:auto; overflow:hidden; background:#fafafa; border:1px solid #ddd; padding:5px 5px 0px 5px; margin-bottom:5px; display:block; line-height:18px;}
+.comment_details{ width:605px; padding-left:5px}
+.quotes ul{ width:610px; overflow:hidden;}
+.quotes_word{ width:540px;}
+li.comment_details span.quotes_word a{ color:#1470cc;}
+li.comment_details span.quotes_word a:hover{ color:#1470cc; text-decoration:underline;}
+/*** 个人主页 原文转发 E ***/
+
+/*------------- 个人主页 职友们在干嘛 评论 S------------*/
+.comments{ width:625px; float:left;}
+.comment_box{ width:625px;float:left; margin-top:10px;}
+.comment_box_tle{ width:625px; height:9px; float:left; overflow:hidden;}
+.comment_block_close{text-align:right; margin-right:25px;float:right; display:inline;}
+.comment_block_closes{text-align:left; margin-left:8px; _margin-left:4px; float:left; display: inline;}
+
+.comment_con{ width:663px; float:left; margin:11px 0 0 0;}
+.comment_cons{ width:660px; height:55px; float:left; font-size:12px; line-height:18px; border:1px solid #c6c6c6; background-color:#FFF;overflow:hidden; display:block;resize:none;}
+.comment_word{ width:663px; height:41px; float:left; margin:5px 0 0 0;}
+.comment_word_l{ width:18px; height:18px; float:left; cursor:pointer}
+.comment_word_c{ width:229px; height:41px; float:left; margin-left:10px; display:inline}
+.comment_word_cs{ width:229px; height:13px; float:left; margin-bottom:7px}
+.comment_word_cs_k{ width:13px; height:13px; float:left}
+.comment_word_cs_ks{ width:13px; height:13px; float:left; margin-top:4px}
+.comment_word_cs_w{ width:210px; height:13px; margin-top:0px; float:left; margin-left:4px; display:inline}
+.comment_word_r{ width:59px; height:25px; float:right;}
+.comment_word_rs{ width:59px; height:21px; line-height:21px; background-image: url(../images/application_button.gif); color:#FFF; cursor:pointer}
+
+/*-------------  个人主页 职友们在干嘛 E------------*/
+
+/*------发布信息人物内容 S-------*/
+.pub_cons{ width:560px; height:auto; text-align:left; line-height:20px;color:#4e4e4e; display:inline;}
+.pub_cons a{ color:#028bd8;}
+.pub_cons a:hover{ text-decoration:underline;}
+.pub_conns{ width:376px; height:auto; text-align:left; line-height:20px; margin-left:8px; color:#4e4e4e; display:inline;}
+.pub_conns a{ color:#0089da;}
+.pub_conns a:hover{ text-decoration:underline;}
+/*------发布信息人物内容 S-------*/
+
+/*------ 个人主页 发布信息人物内容 S-------*/
+.operate{ display:block; margin-top:5px}
+.pub_time{ text-align:left; float:left; color:#979696;}
+.pub_time a{ color:#ccc;}
+.pub_time a:hover{ text-decoration:underline;}
+.pub_caozuo{ text-align:right; float:right; color:#ccc;}
+.pub_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pub_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pubb_caozuo{ text-align:right; float:right; margin-right:9px; display:inline; color:#ccc;}
+.pubb_caozuo a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pubb_caozuo a:hover{ cursor:pointer; text-decoration:underline; }
+.pub_caozuo a i{ font-style:normal;}
+/*------ 个人主页 发布信息人物内容 S-------*/
+
+/*** 个人主页 原文转发 S 个人主页***/
+.pub_comment{ width:600px; height:auto; overflow:hidden; background:#fff; border:4px solid #cdcdcc;text-align:left}
+.quote{ width:550px; height:24px; background-color:#edf4f8;}
+.quote_l{ width:130px; height:24px; line-height:24px; color:#000 ; float:left; margin-left:5px; display:inline; }
+.quote_r{ width:9px; height:9px; background-color:#edf4f8; float:right; margin:6px 15px 0 0; display:inline}
+.quote_txt{ width:580px; height:auto; float:left; padding:10px; color:#333}
+.quote_pic{ width:580px; height:18px; float:left; padding:0 10px;}
+.quote_pic_l{ width:18px; height:18px; float:left; cursor: pointer}
+.quote_pic_r{ width:117px; height:18px; line-height:18px; float:right; color:#666}
+.quote_con{ width:575px; height:50px; float:left; margin:10px 0 0 0;padding:0 10px;}
+.quote_cons{ width:575px; height:50px; font-size:12px; color:#666;border:1px solid #CCC;overflow-y:hidden}
+.quote_button{ width:580px; height:19px;  float:left; padding:10px; margin-top:10px}
+.quote_buttons{ width:47px; height:19px; line-height:19px; background-image: url(../images/pl_bg.gif)}
+.quote_button_l{ width:47px; height:19px;  float:left; margin-left:230px; display:inline}
+.quote_button_r{ width:47px; height:19px;  float:left; margin-left:20px; display:inline}
+/*** 个人主页 原文转发 E ***/
+
+
+/*------ 个人主页 发布信息人物内容 S-------*/
+.pub_conns{ width:376px; height:auto; text-align:left; line-height:20px; margin-left:8px; color:#4e4e4e; display:inline;}
+.pub_conns a{ color:#0089da;}
+.pub_conns a:hover{ text-decoration:underline;}
+.operates{ width:555px; display:block; margin-top:10px; float:right}
+.pub_times{ text-align:left; float:left; color:#979696;}
+.pub_times a{ color:#ccc;}
+.pub_times a:hover{ text-decoration:underline;}
+.pub_caozuos{ text-align:right; float:right; margin-right:20px; margin-bottom:5px; display:inline; color:#ccc;}
+.pub_caozuos a{ margin-left:3px; margin-right:3px; color:#028bd8;}
+.pub_caozuos a:hover{ cursor:pointer; text-decoration:underline; }
+.pub_caozuos a i{ font-style:normal;}
+/*------ 个人主页 发布信息人物内容 S-------*/
+/*--------------评论和回复 S----------------*/
+.comment_box_dw{ width:625px; float:left; padding-bottom:5px}
+.comment_box_dw dl{ width:625px; padding-bottom:5px; background:url(../images/show_line.gif) repeat-x bottom; float:left; margin-bottom:10px}
+.comment_box_dw dl dt{ width:30px; height:30px; float:left}
+.comment_box_dw dl dd{ width:585px; float:right; line-height:18px; color:#666; text-align:left;}
+.comment_box_dw dl dd span{ float:right; text-align:right; color:#CCC}
+/*--------------评论和回复 E----------------*/
+/*****************************新一条微博页面样式 S *************************************/
+.user{ width:960px; height:auto; overflow:hidden; margin-left:auto; margin-right:auto; text-align:center; margin-top:15px; font-size:12px; margin-bottom:15px;}
+.user_top{ width:960px; height:7px; overflow:hidden;}
+.ut_left{ width:7px; height:7px; background:url(../images/resume/orange_top_left.gif) no-repeat; display:block; float:left;}
+.ut_mid{ width:946px; height:7px; background:url(../images/resume/orange_top_bg.gif) repeat-x; display:block; float:left;}
+.ut_right{ width:7px; height:7px; background:url(../images/resume/orange_top_right.gif) no-repeat; display:block; float:right;}
+.user_con{ width:958px; height:auto; border-left:1px solid #f7b14b; border-right:1px solid #f7b14b; background:#fff7f0; margin-top:-13px; *margin-top:0px;}
+.user_bot{width:960px; height:7px; overflow:hidden; margin-top:-15px; *margin-top:0px;}
+.ub_left{ width:7px; height:7px; background:url(../images/resume/orange_bot_left.gif) no-repeat; display:block; float:left;}
+.ub_mid{ width:946px; height:7px; background:url(../images/resume/orange_bot_bg.gif) repeat-x; display:block; float:left;}
+.ub_right{ width:7px; height:7px; background:url(../images/resume/orange_bot_right.gif) no-repeat; display:block; float:right;}
+.user_detail{ width:940px; height:auto; overflow:hidden; margin-left:auto; margin-right:auto; text-align:center;}
+.ud_left{ width:213px; height:auto; overflow:hidden; float:left;}
+.ud_right{ width:712px; height:auto; overflow:hidden; float:left; margin-left:15px;}
+.user_img{ padding:4px; border:1px solid #e0e0e0; background:#fff; width:190px; height:190px;}
+
+
+/*****************************新一条微博页面样式 E *************************************/

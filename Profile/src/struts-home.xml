@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="home" namespace="/" extends="struts-default">
+	<global-results>
+		<result name="login" type="redirect">/login.jsp</result>
+ 
+	</global-results>
+	<!-- 	
+		<global-results>
+			<result name="forwardToError">/common/error.jsp</result>		
+			<result name="forwardToMsgEx">/common/msgEx.jsp</result>				
+			<result name="forwardToMsg">/common/msg.jsp</result>		
+			<result name="forwardToMsgBox">/common/msgbox.jsp</result>
+
+			<result name="daoException" type="chain">
+				exceptionHandleR
+			</result>
+			<result name="rootException" type="chain">
+				exceptionHandle
+			</result>									
+		</global-results>
+				
+	
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="rootException" />
+			<exception-mapping exception="java.lang.RuntimeException"
+				result="rootException" />
+		</global-exception-mappings>		
+	 -->
+		<action name="home" class="com.job528.profile.action.HomeAction" >
+			<result name="success">home.jsp</result>
+			<result name="forwardUserAccessPage">${userForwardPage}</result>
+		</action>
+	
+	    <action name="first" class="com.job528.profile.action.HomeAction" method="first">
+			<result name="success" type="redirect-action">home</result>
+		</action>
+	
+		<action name="upload" class="com.job528.profile.action.UploadImageAction" >
+		</action>
+		
+		<action name="publishWeibo" class="com.job528.profile.action.WeiboAction" method="publishWeibo">
+			<result name="success">/common/weibo_iterator.jsp</result>
+		</action>
+
+		<action name="publishComment" class="com.job528.profile.action.CommentAction" method="publishComment" >
+			<result name="success">/common/comment_iterator.jsp</result>
+		</action>
+		
+		<action name="weiboList" class="com.job528.profile.action.WeiboAction" method="weiboList">
+			<result name="success">/common/weibo_iterator.jsp</result>
+		</action>
+		
+		<action name="commentList" class="com.job528.profile.action.CommentAction" method="commentList" >
+			<result name="success">/common/comment_iterator.jsp</result>
+		</action>
+		
+		<action name="deleteComment" class="com.job528.profile.action.CommentAction" method="deleteComment" />
+		
+		<action name="deleteWeibo" class="com.job528.profile.action.WeiboAction" method="deleteWeibo" />
+		
+		<action name="getWeibo" class="com.job528.profile.action.WeiboAction" method="getWeibo">
+			<result name="success">/common/weibo_iterator.jsp</result>
+		</action>
+		
+		<action name="show" class="com.job528.profile.action.WeiboAction" method="showWeibo">
+			<result name="success">show.jsp</result>
+		</action>
+		
+		<action name="logOut" class="com.job528.profile.action.LogOutAction">
+			<result name="success" type="redirect-action">home</result>
+		</action>
+	</package>
+	
+	
+</struts>

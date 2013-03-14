@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName" default-lazy-init="true" xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jee="http://www.springframework.org/schema/jee" 
+ xsi:schemaLocation="
+ http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+ http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd"> 
+
+ 
+	<jee:jndi-lookup id="weiboDao" jndi-name="WeiboDaoBean/remote"   
+		 proxy-interface="com.job528.ejb.weibo.bean.WeiboDao" /> 
+	 
+	<jee:jndi-lookup id="commentDao" jndi-name="CommentDaoBean/remote"
+		proxy-interface="com.job528.ejb.comment.bean.CommentDao" />
+
+	<jee:jndi-lookup id="relationshipDao" jndi-name="RelationshipDaoBean/remote"
+		proxy-interface="com.job528.ejb.relationship.bean.RelationshipDao" />
+		
+	<jee:jndi-lookup id="relationGroupDao" jndi-name="RelationGroupDaoBean/remote"
+		proxy-interface="com.job528.ejb.relationgroup.bean.RelationGroupDao" />
+	
+	<jee:jndi-lookup id="favoriteDao" jndi-name="FavoriteDaoBean/remote"
+		proxy-interface="com.job528.ejb.favorite.bean.FavoriteDao" />		
+	
+	<jee:jndi-lookup id="userProfileDao" jndi-name="UserProfileDaoBean/remote"
+		proxy-interface="com.job528.ejb.user.bean.UserProfileDao" />
+		
+	
+	<jee:jndi-lookup id="weiboTokenDao" jndi-name="WeiboTokenDaoBean/remote"
+		proxy-interface="com.job528.ejb.weiboToken.bean.WeiboTokenDao" />
+	
+	<jee:jndi-lookup id="tencentTokenDao" jndi-name="TencentTokenDaoBean/remote"
+		proxy-interface="com.job528.ejb.tencentToken.bean.TencentTokenDao" />
+		
+	<jee:jndi-lookup id="labelDao" jndi-name="LabelDaoBean/remote"
+		proxy-interface="com.job528.ejb.label.bean.LabelDao" />
+		
+	<jee:jndi-lookup id="userAccessHistoryDao" jndi-name="UserAccessHistoryDaoBean/remote"
+	proxy-interface="com.job528.ejb.userAccessHistory.bean.UserAccessHistoryDao" />
+	
+	<jee:jndi-lookup id="sysLableDao" jndi-name="SysLabelDaoBean/remote"   
+		 proxy-interface="com.job528.ejb.admin.sysLabel.bean.SysLabelDao" /> 
+</beans>

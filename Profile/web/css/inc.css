@@ -1,0 +1,511 @@
+/********通用类型 S*********/
+body{ margin:0px auto; padding:0px; border:0px; font-family:Arial,Helvetica,sans-serif,"微软雅黑" "宋体"; font-size:12px; text-align:center;}
+body > div{text-align:center;margin-right:auto;margin-left:auto;}
+div,form,dl,dt,dd,ul,ol,li,span,p,label,table,input,iframe{margin:0px;padding:0px;border:0px;}
+input{outline-style:none}
+img,a img{margin:0px;padding:0px;border:0px;}
+h1,h2,h3,h4,h5,h6{margin:0px;padding:0px;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style-type:none;margin:0px; border:0px; padding:0px;}
+img{ vertical-align:top}
+a{outline-style:none;color:#000;text-decoration:none;behavior:url(../line.htc);}
+.clear{clear:both;font-size:1px;width:1px;visibility:hidden;margin-top:0px!important;*margin-top:-1px;line-height:0}
+/********通用类型 E********/
+
+a:link{text-decoration:none ; color:#000 ;}
+a:visited{text-decoration:none ; color:#000 ;}
+a:hover{text-decoration:none; color:#ff000 ;}
+a:active{text-decoration:none ; color:#000 ; }
+
+a.huise:link{color:#666;text-decoration:none}
+a.huise:visited{color:#666;text-decoration:none}
+a.huise:hover{color:#ff000;text-decoration:underline;}
+a.huise:active{color:#666;text-decoration:none}
+
+a.write:link{color:#fff;text-decoration:none}
+a.write:visited{color:#fff;text-decoration:none}
+a.write:hover{color:#ff000;text-decoration:none;}
+a.write:active{color:#fff;text-decoration:none}
+
+a.blue:link{text-decoration:none ; color:#3399ff; font-size:14px; font-weight:bold}
+a.blue:visited{text-decoration:none ; color:#3399ff; font-size:14px; font-weight:bold}
+a.blue:hover{text-decoration: underline; color:#3399ff; font-size:14px; font-weight:bold}
+a.blue:active{text-decoration:none ; color:#3399ff; font-size:14px; font-weight:bold}
+
+a.bl:link{text-decoration:none ; color:#1470cc; font-size:14px; font-weight:bold}
+a.bl:visited{text-decoration:none ; color:#1470cc; font-size:14px; font-weight:bold}
+a.bl:hover{text-decoration: underline; color:#1470cc; font-size:14px; font-weight:bold}
+a.bl:active{text-decoration:none ; color:#1470cc; font-size:14px; font-weight:bold}
+
+a.sblue:link{color:#0b68b0;text-decoration:none ;}
+a.sblue:visited{color:#0b68b0;text-decoration:none ;}
+a.sblue:hover{color:#0b68b0;text-decoration: underline;}
+a.sblue:active{color:#0b68b0;text-decoration:none ;}
+
+a.ble:link{color:#0179e7;text-decoration:none ;}
+a.ble:visited{color:#0179e7;text-decoration:none ;}
+a.ble:hover{color:#0179e7;text-decoration: underline;}
+a.ble:active{color:#0179e7;text-decoration:none ;}
+
+a.ls:link{color:#0066ff; text-decoration:underline}
+a.ls:visited{color:#0066ff; text-decoration:underline}
+a.ls:hover{color:#ff6600; text-decoration:none}
+a.ls:active{color:#0b68b0; text-decoration:underline}
+
+a.blues:link{color:#3399ff; font-size:12px;}
+a.blues:visited{color:#3399ff; font-size:12px;}
+a.blues:hover{color:#3399ff; font-size:12px;text-decoration: underline;}
+a.blues:active{color:#3399ff; font-size:12px;}
+
+a.cof:link{color:#ae9471; font-size:12px;}
+a.cof:visited{color:#ae9471; font-size:12px;}
+a.cof:hover{color:#ae9471; font-size:12px;}
+a.cof:active{color:#ae9471; font-size:12px;}
+
+
+
+a.yellow:link{color:#3d990f; font-size:12px;}
+a.yellow:visited{color:#3399ff; font-size:12px;}
+a.yellow:hover{color:#3399ff; font-size:12px;}
+a.yellow:active{color:#3399ff; font-size:12px;}
+
+a.juhuang:link{color:#ff780a; font-size:12px;}
+a.juhuang:visited{color:#ff780a; font-size:12px;}
+a.juhuang:hover{color:#ff780a; font-size:12px;}
+a.juhuang:active{color:#ff780a; font-size:12px;}
+
+a.jh:link{color:#f68907; font-size:12px;}
+a.jh:visited{color:#f68907; font-size:12px;}
+a.jh:hover{color:#fff; font-size:12px;}
+a.jh:active{color:#f68907; font-size:12px;}
+
+/*.head{ width:1004px; height:77px; margin:0 auto}
+.logo{ width:235px; height:77px; float:left}
+.head_right{ width:769px; height:77px; float:left; background-image: url(../images/headbg.gif);}
+
+.submenu{ float:right; margin:12px 28px 0 0; display:inline}
+.submenu li{ white-space:nowrap; float:left}
+.icon{ margin-top:4px}
+.submenu li.word{ margin:0 9px; display:inline}
+
+.menu{height:27px; line-height:27px; width:529px; float:right; margin-right:28px; margin-top:19px;margin-top:23px\9; *+margin-top:19px; _margin-top:19px; background-image: url(../images/menubg.gif); display:inline; overflow:hidden}
+.menu ul li{ display:inline;}
+.menu ul li a{width:84px; height:27px;line-height:27px; _line-height:29px;font-size:14px;color:#ff9d10; font-weight:bold ;float:left; display:block; text-align:center; text-decoration: none;}
+.menu ul li a.ahover{width:84px; height:27px; line-height:27px; _line-height:29px; font-size:14px; font-weight:bold; color:#ffffff; float:left; display:block; text-align:center;  background-image: url(../images/menu_hover.gif); text-decoration:none; }
+.menu ul li a:visited{width:84px; height:27px;line-height:27px; _line-height:29px; font-size:14px;color:#ff9d10; font-weight:bold ;float:left; display:block; text-align:center; text-decoration: none;}
+.menu ul li a.ahover:visited{width:84px; height:27px;line-height:27px; _line-height:29px; font-size:14px;color:#fff; font-weight:bold ;float:left; display:block; text-align:center; text-decoration: none;}
+.menu ul li a:hover{width:84px; height:27px; line-height:27px; _line-height:29px; font-size:14px; font-weight:bold; color:#fff; float:left; display:block; text-align:center;  background-image: url(../images/menu_hover.gif); text-decoration:none; }
+.menu ul li a:active{width:84px; height:27px;line-height:27px; _line-height:29px; font-size:14px;color:#ff9d10; font-weight:bold ;float:left; display:block; text-align:center; text-decoration: none;}
+.menu_kong{ margin-right:5px; float:left;}*/
+
+
+/*------版权 S------*/
+.copyright{ width:1004px; margin:0 auto; background-image:url(../images/copyrightbg.gif); background-position:top; background-repeat:repeat-x; line-height:22px; color:#333; padding:10px 0 0 0}
+/*------版权 E------*/
+
+.zoomSmall{cursor: url("http://www.528.cn/imgs/big.cur"), pointer !important;}
+.zoomBig{cursor: url("http://www.528.cn/imgs/small.cur"), pointer !important;}
+
+
+/*-------------首页-插入图片 S------------*/
+.insert_block_word{ width:302px;text-align: center;}
+.insert_block_word_up{ width:302px;height:7px; background-image:url(../images/bq_block_up.gif); overflow:hidden;}
+.insert_block_word_cer{ width:302px; height:auto;background-image:url(../images/bq_block_cer.gif);overflow:hidden}
+.insert_block_word_cer ul{ padding-bottom:15px; text-align: center; margin-left: auto; margin-right:auto}
+.insert_block_word_cer li{ display:block}
+.insert_block_word_cer li p{ width:131px;height:32px; float:left; margin:32px 0 0 85px; display:inline; cursor:pointer; background-image:url(../images/insert_btn.gif); text-align:center}
+.insert_block_word_cer li span{ width:190px; line-height:18px; float:left; margin:10px 0 0 55px; padding-bottom:15px; display:inline; font-size:12px; color:#999999; display:inline; text-align:center;}
+.insert_block_word_cer_1{height:133px; background-image:url(../images/bq_block_cer.gif); padding-top:10px;overflow:hidden; clear:both}
+.insert_p{ width:150px; line-height:18px; font-size:12px; color:#1470cc; display:block; text-align:center; float:left; margin-left:75px; display:inline}
+.insert_block_word_cer_btn{ width:auto; height:auto; max-width:120px;max-height:120px; float:left; margin-left:92px; display:inline; margin-top:10px; clear:both}
+.insert_block_word_dw{ width:302px;height:4px; background-image:url(../images/bq_block_dw.gif); overflow:hidden}
+
+.insert_block_pics{ width:16px; height:16px; margin:40px 0 0 0;}
+.insert_block_words{ white-space:nowrap; height:16px; line-height:16px; margin:40px 0 0 10px;}
+
+/*-------------首页-插入图片 E------------*/
+
+/*-------------首页-添加表情 S------------*/
+.expression_block_word{ width:250px;_width:260px;text-align:left;float:left; display:block; background: url(../biaoqing/bq_block.gif) no-repeat; padding:13px 0 15px 10px;overflow:hidden}
+.expression_block_word ul{ width:250px; float:left;}
+.expression_block_word li{ width:20px; height:20px; float:left; margin:2px; display:inline; cursor:pointer}
+
+/*-------------首页-添加表情 E------------*/
+
+/*-------------申请 S------------*/
+.application_box{ width:293px; height:131px; background-color:#FFF; border:1px solid #c6c6c6}
+.application_box_tle{ width:293px; height:30px; background-image:url(../images/application_tlebg.gif)}
+.application_box_tle_l{ width:60px; height:30px; line-height:30px;font-size:14px; color:#333; float:left; margin-left:7px; display:inline}
+.application_box_tle_r{ width:9px; height:8px; float:right; margin:11px 20px 0 0; display:inline;cursor:pointer;}
+.application_box_dw{ width:252px; height:66px; float:left; margin:19px 0 0 23px; display:inline}
+/*-------------申请 E------------*/
+
+
+/*-------------推荐职位 S------------*/
+.recom_box{ width:490px; height:72px; background-color:#FFF; border:1px solid #c6c6c6}
+.recom_box_tle{ width:490px; height:30px; background-image:url(../images/application_tlebg.gif)}
+.recom_box_tle_l{ width:60px; height:30px; line-height:30px;font-size:14px; color:#333; float:left; margin-left:7px; display:inline}
+.recom_box_tle_r{ width:9px; height:8px; float:right; margin:11px 20px 0 0; display:inline;cursor:pointer;}
+.recom_box_dw{ width:455px; height:21px; float:left; margin:10px 0 0 16px; display:inline}
+.recom_box_dw_l{ width:182px; height:21px; float:left; margin-right:15px;}
+.recom_box_dw_l_name{ width:43px; height:21px; line-height:21px; float:left;}
+.recom_box_dw_l_block{ width:139px; height:21px; float:left;}
+.recom_box_dw_l_blocks{ width:139px; height:21px; line-height:21px}
+.recom_box_dw_r{ width:59px; height:21px; float:left;}
+.recom_box_dw_rs{ width:59px; height:21px; line-height:21px;_line-height:19px; color:#FFF; font-size:12px; background-image:url(../images/application_button.gif); cursor:pointer}
+/*-------------推荐职位 E------------*/
+
+/*--------------------我投递的职位 S---------------------*/
+.jobs_us{ font-size:12px; font-weight:bold; padding-left:5px;}
+.jobs_me{ font-size:12px; line-height:30px; padding-left:5px;}
+.jobs_fxk{ width:12px; float:left;height:15px; vertical-align:bottom; margin-top:9px; margin-left:19px;}
+.jobs_qx{ float:left; line-height:30px; _margin-top:1px; margin-left:5px; display:inline}
+.jobs_an{ width:731px; height:21px; float:left; margin-left:21px; display:inline; clear:both; margin-bottom:10px; margin-top:15px}
+.jobs_aniu{
+	width:62px;
+	background-image: url(../images/job_search_button.gif);
+    display: block;
+    float: right;
+    height: 21px;
+	color:#FFF;
+	cursor:pointer;
+    line-height: 21px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;}
+   
+/*--------------------我投递的职位 E---------------------*/
+.index_file{outline: medium none; font-size:26px;_font-size:19px;_font-size:19px\9; width:70px; height:34px;left:80px;top:38px; display: inline; visibility: visible;background:none repeat scroll 0 0 transparent;border:medium none;cursor:pointer;	-moz-opacity:0;opacity:0;position:absolute;filter:alpha(opacity=0)}
+
+.img_1{width:50px;height:50px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #D2D2D2;padding: 2px;
+}
+
+.people_sj{ text-align:center; height:99px;line-height:99px;}
+.people_sj span{ text-align:center; height:99px; line-height:99px; float:left}
+.people_sj img{ margin-top:40px; float:left; margin-left:100px; display:inline}
+
+
+
+
+/*------------------------个人资料  地区搜索 S--------------------------*/
+.popdiv{
+	background-color: #FFFFFF;
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    height: auto;
+    position: relative;
+    width: 765px;
+	_width: 775px;
+	left:-151px;
+	top:-63px;
+	*left:-156px;
+	*top:-49px;
+    z-index: 9999;}
+/*.popdiv{
+	background-color: #FFFFFF;
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    height: auto;
+    position: absolute;
+    width: 765px;
+	_width: 775px;
+	left:-32px;
+	top:-41px;
+	*left:-36px;
+	*top:-249px;
+    z-index: 9999;}*/
+.popdiv_top{background: url(../images/pop_title.gif) repeat-x scroll 0 0 transparent;
+    clear: both;
+    height: 34px;
+    line-height: 25px;
+    overflow: hidden;}
+.popdiv_top h1 {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+	display:inline;}
+.popdiv .popdiv_top .popdiv_fun{
+    float: right;
+    margin-right: 10px;
+	display:inline;
+}
+.popdiv .popdiv_top .popdiv_fun a {
+    color: #FFFFFF;
+}
+.popdiv .popdiv_con {
+    padding: 5px;
+}
+.popdiv_over {
+    background-color: #FF6600;
+    color: #FFFFFF;
+}
+.popdiv .popdiv_selectedAreaTitle {
+    color: #FF6600;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-right: 10px;
+    text-align: left;
+}
+.popdiv ul.popdiv_selectedArea {
+    float: left;
+    height: 24px;
+    overflow: hidden;
+}
+.popdiv ul.popdiv_selectedArea li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+.popdiv .popdiv_areaTitle {
+    background-color: #F9F9F9;
+    border-top: 1px solid #E0E0E0;
+    clear: both;
+    color: #FF6600;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    padding-top: 1px;
+    text-align: left;
+}
+
+ul.main_city {
+    height: auto;
+    margin: 0 0 0 3px;
+    padding: 0;
+    width: 759px;
+}
+ul.main_city li {
+    cursor: pointer;
+    float: left;
+    list-style: none outside none;
+    margin-bottom: 2px;
+    margin-top: 4px;
+    width: 370px;
+}
+ul.main_city li a{
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-right: 8px;
+    padding: 3px;
+    text-decoration: none;
+}
+ul.main_city li a:hover{
+ display:block; color:#fff; background-color:#ff7400
+}
+ul.main_city li b.city_letter {
+    color: #FF7400;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.popdiv ul.popdiv_area1 {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+.popdiv ul.popdiv_area1 li {
+    display: block;
+	cursor:pointer;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-align: left;
+    width: 68px;
+}
+.popdiv ul.popdiv_area1 li a{
+    display: block;
+	cursor:pointer;
+}
+.popdiv ul.popdiv_area1 li a:hover{
+    display: block;
+	cursor:pointer;
+	color:#FFF;
+	background-color:#FF7400;
+}
+.popdiv_area2 {}
+.popdiv_area2 ul {
+    background-color: #FFFFCC;
+    border: 1px solid #FF6600;
+    height: auto;
+    overflow: hidden;
+    padding: 2px 5px;
+    width: 220px;
+}
+.popdiv_area2 ul li.popdiv_areaTitle2 {
+    clear: both;
+    float: left;
+    font-weight: 700;
+    text-align: left;
+    width: 600px;
+}
+.popdiv_area2 ul li {
+    display: block;
+    float: left;
+    height: 18px;
+	line-height:18px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+    width: 110px;
+}
+
+.popdiv .popdiv_selectedJobTitle {
+    color: #FF6600;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-right: 10px;
+    text-align: left;
+}
+.popdiv ul.popdiv_selectedJob {
+    float: left;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.popdiv ul.popdiv_selectedJob li {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+}
+.popdiv .popdiv_jobTitle {
+    background-color: #F9F9F9;
+    border-top: 1px solid #E0E0E0;
+    clear: both;
+    color: #FF6600;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-align: left;
+}
+.popdiv ul.popdiv_job1 {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+.popdiv ul.popdiv_job1 li {
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+    width: 88px;
+}
+
+.popdiv_jobSort {
+    clear: both;
+    height: auto;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.popdiv_jobSort ul {
+    display: block;
+    float: left;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 680px;
+}
+.popdiv_jobSort li {
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-align: left;
+    width: 135px;
+}
+.popdiv_newSort li {
+    line-height: 20px;
+    margin-top: 2px;
+    width: 150px;
+}
+.popdiv_jobSort li.jobSortHit {
+    font-weight: 700;
+}
+.popdiv_jobSort div.jobSortTitle {
+    color: #FF6600;
+    float: left;
+    font-size: 12px;
+    font-weight: 700;
+    padding-top: 3px;
+    text-align: left;
+    width: 70px;
+}
+.popdiv_jobSort li label {
+    display: block;
+    width: 135px;
+}
+
+
+.popdiv .popdiv_areaTitle3{
+    background-color: #F9F9F9;
+    border-top: 1px solid #E0E0E0;
+    clear: both;
+    color: #FF6600;
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 1px;
+    text-align: left;
+}
+.popdiv ul.popdiv_area3 {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+}
+.popdiv ul.popdiv_area3 li {
+    display: block;
+	cursor:pointer;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+    width:180px;
+}
+.popdiv ul.popdiv_area3 li a{
+    display: block;
+	cursor:pointer;
+}
+.popdiv ul.popdiv_area3 li a:hover{
+    display: block;
+	cursor:pointer;
+	color:#FFF;
+	background-color:#FF7400;
+}

@@ -1,0 +1,32 @@
+1.关于accessToken是否有效？
+如果用户在新浪微博平台取消了该网站的授权，
+在528数据库中的accessToken就会无效，如果这时通过正常途径登录，这时候获取的accessToken就为无效了，在调用其它的API肯定通不过。
+
+2.关于session time out还没有进行设置
+
+3.session过期如何处理。
+
+4查询可能认识的人的职务时，有时候登录用户自已的工作经历为空。所以查询出来的人匹配同事质量不高，可以在用户登录后提示用户完善他的信息。
+
+5.
+try {
+			UserPager userPage = this.searchUserService.searchUser(condition);
+			if(userPage != null && userPage.getUserInfo() != null){
+				friendsPager.setTotalSize(userPage.getTotalSize());
+				friendsPager.setPageSize(pageSize);
+				friendsPager.setPageNo(pageIndex);
+				for(UserInfo userInfo : userPage.getUserInfo()){
+					Follower friend = new Follower();
+					friend.setUserInfo(userInfo);
+					Friend  frd = relationshipService.getRelationshipByUserId(userId, userInfo.getUid());
+					friend.setFriend(frd);
+					list.add(friend);
+				}
+			}
+		} catch (Exception e) {
+			log.error("searchFriends err:", e);
+		}
+
+
+
+

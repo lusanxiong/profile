@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true">
+
+
+	<bean id="hibernateProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<!--<prop key="hibernate.hbm2ddl.auto">update</prop>
+				-->
+				<prop key="hibernate.dialect">
+					com.job528.util.dao.SQLServer2005Dialect
+				</prop>
+				<prop key="hibernate.query.substitutions">
+					true 1, false 0
+				</prop>
+				<!-- <prop key="hibernate.hbm2ddl.auto">create</prop>  -->
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.use_sql_comments">true</prop>
+ 
+				<prop key="hibernate.jdbc.fetch_size">50</prop>
+				<!-- <prop key="hibernate.jdbc.batch_size">50</prop> -->
+				
+				<prop key="hibernate.c3p0.minPoolSize">5</prop>
+				<prop key="hibernate.c3p0.maxPoolSize">20</prop>
+				<prop key="hibernate.c3p0.timeout">600</prop>
+				<prop key="hibernate.c3p0.max_statement">50</prop>
+				<prop key="hibernate.c3p0.testConnectionOnCheckout">
+					false
+				</prop>
+
+				<prop key="hibernate.cache.use_second_level_cache">
+					false
+				</prop>
+				
+				<prop key="hibernate.cache.use_query_cache">
+					false
+				</prop>
+				<prop key="hibernate.cache.provider_class">
+					org.hibernate.cache.EhCacheProvider
+				</prop>
+
+
+			</props>
+		</property>
+	</bean>
+
+
+
+	<!--Spring TransactionManager-->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties" ref="hibernateProperties" />
+		<property name="mappingResources">
+			<list>				
+				<value>hibernate/MyResume.hbm.xml</value>
+				<value>hibernate/MemInfo.hbm.xml</value>
+				<value>hibernate/MemPosition.hbm.xml</value>
+				<value>hibernate/MemRights.hbm.xml</value>
+				<value>hibernate/MyAccount.hbm.xml</value>
+				<value>hibernate/MyCertificate.hbm.xml</value>
+				<value>hibernate/MyEducation.hbm.xml</value>
+				<value>hibernate/MyEducationEng.hbm.xml</value>
+				<value>hibernate/MyFavouriate.hbm.xml</value>
+				<value>hibernate/MyLetter.hbm.xml</value>
+				<value>hibernate/MyOutSendResumeLog.hbm.xml</value>
+				<value>hibernate/MyResumeViewedLog.hbm.xml</value>
+				<value>hibernate/MyResumeEng.hbm.xml</value>
+				<value>hibernate/MySearcher.hbm.xml</value>
+				<value>hibernate/MyUsers.hbm.xml</value>
+				<value>hibernate/MyWorkExp.hbm.xml</value>
+				<value>hibernate/MyWorkExpEng.hbm.xml</value>
+				<value>hibernate/MyMessage.hbm.xml</value>
+				<value>hibernate/MyTraining.hbm.xml</value>
+				<value>hibernate/MyLanguage.hbm.xml</value>
+				<value>hibernate/MyRecommendJob.hbm.xml</value>
+				<value>hibernate/MyMessageData.hbm.xml</value>
+				<value>hibernate/MyMessageInfo.hbm.xml</value>
+				<value>hibernate/PubHistory.hbm.xml</value>
+				<value>hibernate/MessageQueue.hbm.xml</value>
+			</list>
+
+		</property>
+
+	</bean>
+
+
+	<!-- Hibernate的事务管理机制 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+</beans>
+

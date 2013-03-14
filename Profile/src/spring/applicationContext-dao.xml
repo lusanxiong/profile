@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-autowire="byName" default-lazy-init="true">
+
+	<bean id="resumeDao" class="com.job528.profile.dao.impl.MyResumeDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="messageDao" class="com.job528.profile.dao.impl.MessageDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="workExpDao" class="com.job528.profile.dao.impl.MyWorkExpDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="educationDao" class="com.job528.profile.dao.impl.MyEducationDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="trainingDao" class="com.job528.profile.dao.impl.MyTrainingDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="languageDao" class="com.job528.profile.dao.impl.MyLanguageDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="applyDao" class="com.job528.profile.dao.impl.ApplyDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="recommendJobDao" class="com.job528.profile.dao.impl.MyRecommendJobDao">
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	
+	<bean id="userDao" class="com.job528.profile.dao.impl.UserDao">
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="recommendPositionDao" class="com.job528.profile.dao.impl.RecommendPositionDao">
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="iPAddressDao" class="com.job528.profile.dao.impl.IpAddressDao">
+	    <property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+</beans>

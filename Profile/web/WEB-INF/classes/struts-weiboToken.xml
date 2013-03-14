@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="weiboToken" namespace="/weiboToken" extends="json-default">
+	   <action name="weiboToken" class="com.job528.profile.action.weiboToken.WeiboTokenAction">
+			<result name="success" type="json"></result>
+		</action>
+ 
+		<action name="userWeibo" class="com.job528.profile.action.weiboToken.UserWeiboAction">
+			<result name="success" >/setting/weibo_sync_inner.jsp</result>
+		</action>
+ 
+		<action name="tencentToken" class="com.job528.profile.action.weiboToken.TencentTokenAction" >
+		    <result name="success" type="json">index.jsp</result>
+		</action>
+      
+	</package>
+</struts>

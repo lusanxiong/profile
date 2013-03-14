@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="profile" default="deploy" basedir=".">
+	<property environment="env" />
+	<property name="src" value="${basedir}/src" />
+	<property name="build.dir" value="${basedir}/build" />
+	<property name="build.classes.dir" value="${build.dir}/classes" />
+	<property name="jboss.home" value="D:\jboss-5.1.0.GA" />
+	<property name="jboss.server.config" value="default" />
+	<property name="warfile" value="${basedir}/${ant.project.name}.war" />
+	<property name="weblib" value="${basedir}/web/WEB-INF/lib"></property>
+	
+	<path id="client.path">
+		<fileset dir="${jboss.home}/client">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${weblib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="makeDir">
+		<delete dir="${build.classes.dir}" />
+		<delete file="${warfile}" />
+		<mkdir dir="${build.classes.dir}" />
+	</target>
+	
+	<target name="compile" depends="makeDir">
+		<javac srcdir="${src}" destdir="${build.classes.dir}">
+			<compilerarg value="-Xlint:unchecked"/>
+			<compilerarg value="-Xlint:deprecation"/>
+			<classpath refid="client.path" />
+		</javac>
+	</target>
+	
+	<target name="war" depends="compile">
+		<war destfile="${warfile}" webxml="${basedir}/web/WEB-INF/web.xml">
+			<fileset dir="${basedir}/web" includes="**/*.jsp" >
+				<include name="**/*.css"/>
+				<include name="**/*.js"/>
+				<include name="**/*.properties"/>
+				<include name="**/*.xml"/>
+				<include name="**/*.gif"/>
+			</fileset>
+			
+			<classes dir="${build.classes.dir}"></classes>
+			<metainf dir="${basedir}/web/WEB-INF"></metainf>
+			<lib dir="${weblib}">
+				<exclude name="servlet.jar"/>
+			</lib>
+		</war>
+	</target>
+	
+	<target name="deploy" depends="war">
+		<copy file="${warfile}" todir="${jboss.home}\server\${jboss.server.config}\deploy" />
+	</target>
+
+	<target name="undeploy">
+		<delete file="${jboss.home}\server\${jboss.server.config}\deploy\${ant.project.name}.war" />
+	</target>
+</project>
+
+
+
+
+
+
+
+

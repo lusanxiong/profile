@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	
+	
+	<package name="jobs" namespace="/jobs" extends="struts-default">
+	   <action name="searchJobs" class="com.job528.profile.action.JobsAction">
+			<result name="success">/jobs/searchJobs.jsp</result>
+		</action>
+		
+		
+		<action name="mySearcher" class="com.job528.profile.action.JobsAction" method="getSearchList">
+			<result name="success">/jobs/engines.jsp</result>
+		</action>
+		
+		<action name="delSearcher" class="com.job528.profile.action.JobsAction" method="delSearcher">
+			<result name="success" type="redirect-action">
+				<param name="actionName"  >mySearcher.shtml</param>
+			</result>
+		</action>
+		
+		<action name="editSearcher" class="com.job528.profile.action.JobsAction" method="editSearcher">
+			<result name="success">/jobs/engine.jsp</result>
+		</action>
+		
+		<action name="saveSearcher" class="com.job528.profile.action.JobsAction" method="saveSearcher">
+			<result name="success">/jobs/searchJobs.jsp</result>
+		</action>
+		
+		<action name="search" class="com.job528.profile.action.SearchJobAction">
+			<result name="success">/jobs/jobItem.jsp</result>
+		</action>
+		
+		<action name="myApply" class="com.job528.profile.action.ApplyJobAction">
+			<result name="success">/jobs/myapply.jsp</result>
+		</action>
+		
+		<action name="myFavouriate" class="com.job528.profile.action.FavouriateJobAction">
+			<result name="success">/jobs/myFavouriate.jsp</result>
+		</action>
+		
+		<action name="myInvite" class="com.job528.profile.action.InviteJobAction">
+			<result name="success">/jobs/myinvite.jsp</result>
+		</action>
+		
+		<action name="myRecommend" class="com.job528.profile.action.RecommendAction">
+			<result name="success">/jobs/myRecommend.jsp</result>
+		</action>
+		
+	</package>
+	
+	
+	
+</struts>

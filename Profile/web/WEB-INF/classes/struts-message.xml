@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="messages" namespace="/messages" extends="struts-default">
+	   <action name="myMessages" class="com.job528.profile.action.MessageAction">
+			<result name="success">/messages/myMessages.jsp</result>
+		</action>
+		<action name="messageinfo" class="com.job528.profile.action.MessageAction" method="getSendList">
+			<result name="success">/messages/send.jsp</result>
+		</action>
+		<action name="messagelist" class="com.job528.profile.action.MessageAction" method="getReceivedList">
+			<result name="success">/messages/recevied.jsp</result>
+		</action>
+		<action name="savePrivateMessage" class="com.job528.profile.action.MessageAction" method="savePrivateMessage">
+			<result name="success">/common/pm_iterator.jsp</result>
+		</action>
+		<action name="deletePrivateMessage" class="com.job528.profile.action.MessageAction" method="deletePrivateMessage">
+			<result name="success">/messages/xxx.jsp</result>
+		</action>
+		<action name="getMyPrivateMessage" class="com.job528.profile.action.MessageAction" method="getMyPrivateMessage">
+			<result name="success">/messages/xxx.jsp</result>
+		</action>
+		
+	</package>
+</struts>
